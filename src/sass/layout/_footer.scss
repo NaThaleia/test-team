@@ -32,9 +32,26 @@
 .footer-soc__item {
   height: 32px;
   width: 32px;
+<<<<<<< Updated upstream
   fill: var(--white-color);
 }
 
+=======
+  background-color: pink;
+  border-radius: 50%;
+}
+.footer-soc__icon {
+  align-items: center;
+  fill: white;
+}
+.footer-soc__link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+>>>>>>> Stashed changes
 .footer-trademark {
   border-top: 1px solid #e1e1e1;
 }
