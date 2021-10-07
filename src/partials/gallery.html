@@ -1,12 +1,28 @@
-<section class="gallery-section">
-  <div class="container">
-    <div class="gallery-image">
+<div class="gallery-image">
       <picture>
-        <source srcset="./" media="(min-width:1200px)" />
-        <source srcset="/" media="(min-width:768px)" />
-        <source srcset="/" media="(min-width:320px)" />
-        <img src="/" alt="Фото мороженого" />
+        <source
+          
+          srcset="../images/gallery/gallery-desc1x.jpg 1x, ../images/gallery/gallery-desc2x.jpg 2x"
+          media="(min-width:1200px)"
+        />
+        <source
+          
+          srcset="
+            ../images/gallery/gallery-tablet1x.jpg 1x,
+            ../images/gallery/gallery-tablet2x.jpg 2x
+          "
+          media="(min-width:768px)"
+        />
+        <source
+          
+          srcset="
+            ../images/gallery/gallery-mobile1x.jpg 1x,
+            ../images/gallery/gallery-mobile2x.jpg 2x
+          "
+          media="(min-width:320px)"
+        />
+        
+        <img src="../images/gallery/gallery-mobile1x.jpg" alt="Фото мороженого" />
       </picture>
     </div>
   </div>
-</section>
