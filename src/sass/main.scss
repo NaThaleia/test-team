@@ -5,6 +5,12 @@
 
 // Стили для файла с примером HTML-фрагмента
 @import './utils/variables';
-@import './layout/about';
 
+@import './base/body';
+@import './base/reset';
+@import './components/container';
+
+
+@import './layout/about';
+@import './layout/customer-reviews';
 @import './layout/footer';
