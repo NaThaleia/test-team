@@ -1,5 +1,5 @@
 .about {
-  background-color: #fff5f6;
+  background-color: $bg-color;
   padding-top: 125px;
 }
 
@@ -11,7 +11,7 @@
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #ffa5ba;
+  color: $second-color;
 
   @media screen and (min-width: 768px) {
     font-size: 26px;
@@ -32,7 +32,7 @@
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #d41443;
+  color: $main-color;
 
   @media screen and (max-width: 767px) {
     width: 200px;
@@ -79,7 +79,6 @@
 
 .about-sub-title {
   margin-bottom: 35px;
-  font-family: DM Sans;
   font-size: 12px;
   line-height: 1.62;
   letter-spacing: 0.04em;
@@ -98,12 +97,11 @@
 
 .about-text {
   margin-bottom: 45px;
-  font-family: DM Sans;
   font-size: 12px;
   line-height: 1.62;
   letter-spacing: 0.04em;
 
-  color: #907e82;
+  color: $second-text-color;
 
   @media screen and (min-width: 480px) {
     font-size: 14px;
@@ -118,7 +116,6 @@
 }
 
 .about-btn {
-  font-family: DM Sans;
   font-weight: 900;
   font-size: 16px;
   line-height: 1.31;
@@ -127,14 +124,13 @@
   align-items: center;
   width: 175px;
   height: 45px;
-  color: #d41443;
+  color: $main-color;
   border: none;
   background-color: #ffffff;
 }
 
 .about-sub-title {
   margin-bottom: 35px;
-  font-weight: 500;
   font-size: 16px;
   line-height: 1.76;
   letter-spacing: 0.04em;
@@ -143,7 +139,6 @@
 
 .about-text {
   margin-bottom: 45px;
-  font-weight: 500;
   font-size: 14px;
   line-height: 1.94;
   letter-spacing: 0.04em;
