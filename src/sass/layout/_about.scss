@@ -1,8 +1,6 @@
 .about {
   background-color: #fff5f6;
   padding-top: 125px;
- 
-
 }
 
 .about-pre-title {
@@ -43,7 +41,7 @@
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-color: #d41443;
+  color: #d41443;
 
   @media screen and (max-width: 767px) {
     width: 200px;
@@ -63,18 +61,15 @@ color: #d41443;
     display: flex;
     justify-content: space-between;
   }
-}
 
   color: $main-color;
 }
 
- .about-content {
- }
+//  .about-content {
+//  }
 
-
- .about-background {
- }
-
+//  .about-background {
+//  }
 
 .about-foto {
   margin-top: 25px;
@@ -158,12 +153,13 @@ color: #d41443;
 
   border: none;
   background-color: #ffffff;
+}
 
- .about-foto {
- }
+//  .about-foto {
+//  }
 
- .about-right-info {
- }
+//  .about-right-info {
+//  }
 
 .about-sub-title {
   margin-bottom: 35px;
