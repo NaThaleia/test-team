@@ -20,12 +20,23 @@
   text-align: center;
   color: $main-color;
 }
+.card {
+  position: relative;
+}
 .card-set {
   background-color: #ffb8ca;
 }
 .card-set::before {
-  background-image: url(../images/products/ice-cream-mobile1x.png);
+  top: 0;
+  left: 0;
+
+  content: '';
   display: block;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  background-image: url(../images/products/ice-cream-mobile1x.png);
+
   position: absolute;
 }
 .title-second {
