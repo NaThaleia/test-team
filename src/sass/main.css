@@ -1058,6 +1058,29 @@ h6 {
   color: #d41443;
 }
 
+.advantages-list__text {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 170%;
+  color: #000000;
+}
+
+.advantages-list {
+  position: relative;
+}
+
+.advantages-list__item::before {
+  top: 0;
+  left: 0;
+  content: '';
+  display: block;
+  background-position: left;
+  background-size: cover;
+  position: absolute;
+  background-image: url(../images/advantages/advantage-icon1-1x.png);
+  position: absolute;
+}
+
 .customer-reviews {
   background-color: tomato;
 }
