@@ -46,12 +46,13 @@
 
   @media screen and (min-width: 1200px) {
     bottom: 102px;
-    padding-right: 95px;
-    padding-left: 95px;
   }
 }
 
 .contacts__row {
+  padding-left: 0;
+  margin: 0;
+  list-style-type: none;
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
