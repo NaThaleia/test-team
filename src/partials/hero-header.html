@@ -1,35 +1,59 @@
 <header class="header">
-    <a class="header-logo" href="" ></a>
+    <img class="logo-img" srcset="./images/logo1x.png 1x, ./images/logo2x.png 2x" alt="Logo" />
+    <nav class="header-nav">
     <ul class="haeder-list list">
-        <li class="header-link link">
-            <a class="header-item current" href="">Home
-            </a></li>
-        <li class="header-link link">
-            <a class="header-item link" href="">About us</a></li>
-        <li class="header-link">
-            <a class="header-item link" href="">How it’s made?</a></li>
-        <li class="header-link">
-            <a class="header-item link" href="">Our products</a></li>
-        <li class="header-link">
-            <a class="header-item link" href="">Contact</a></li>
+      <li class="header-link">
+        <a class="header-item link" href="">Home</a>
+      </li>
+      <li class="header-link">
+        <a class="header-item link" href="">About us</a>
+      </li>
+      <li class="header-link">
+        <a class="header-item link" href="">How it’s made?</a>
+      </li>
+      <li class="header-link">
+        <a class="header-item link" href="">Our products</a>
+      </li>
+      <li class="header-link">
+        <a class="header-item link" href="">Contact</a>
+      </li>
     </ul>
-
-    <button type="submit" class="button-submit">Buy now
-        <svg class="icon" width="4" height="8">
-            <use href=""></use>
-        </svg>
-    </button>            
+  </nav>
+  <button type="submit" class="button-submit button">Buy now ></button>
 </header>
 
 <section class="hero">
-    <h1 class="hiro-titel"><span class="titel-first">ice cream made with</span>passion</h1>
-    <button type="button">Products</button>
-    <button type="button">How it’s made?</button>
-    <img src="" alt="BioEco">
-    <p class="hiro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-    <button type="button">
-        <svg class="icon" width="4" height="8">
-            <use href=""></use>
+  <div class="conteiner">
+    <div class="titel-box">
+      <h1 class="hero-titel"><span class="titel-first">ice cream made with </span>passion</h1>
+      <div class="button-box">
+        <button type="button" class="button-hero1">Products</button>
+        <button type="button" class="button-hero2">How it’s made?</button>
+      </div>
+    </div>
+    <div class="milk-box">
+      <img class="milk-img"src="./images/hero/hero-milk-desc1x.png" alt="BioEco">
+      <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et</p>
+      <button type="button" class="button-item">
+        <svg class="icon-arrow-right" width="8" height="8">
+          <use href="./images/icons.svg#icon-arrow-right"></use>
         </svg>
-    </button>
+      </button>
+    </div>
+    <!-- <div class="hero-icecream">
+      <picture class="picture-icecream">
+        <source srcset="./images/hero/hero-ice-cream-desc1x.png 1x, ./images/hero/hero-ice-cream-desc2x.png 2x"
+          media="(min-wight:1280px)">
+        <source srcset="./images/hero/hero-ice-cream-tablet1x.png 1x, ./images/hero/hero-ice-cream-tablet2x.png 2x"
+          media="(min-wight:768px)">
+        <source srcset="./images/hero/hero-ice-cream-mobile1x.png 1x, ./images/hero/hero-ice-cream-mobile2x.png 2x"
+          media="(min-wight:320px)">
+        <img src="./images/hero/hero-ice-cream-desc1x.png" alt="IceCream">
+      </picture>
+    </div> -->
+    
+    <div class="circle"></div>
+  </div>
 </section>
+
