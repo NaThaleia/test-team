@@ -1069,6 +1069,17 @@ h6 {
   position: relative;
 }
 
+.advantages-list__item::before {
+  top: 0;
+  left: 0;
+  content: '';
+  display: block;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  background-image: url(./images/advantages/advantage-icon1-1x.png);
+}
+
 .customer-reviews {
   background-color: tomato;
 }
