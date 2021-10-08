@@ -1,0 +1,148 @@
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: $ice-cream;
+}
+
+.header-nav {
+  display: flex;
+}
+
+.header-logo {
+  margin-right: 130px;
+}
+
+.haeder-list {
+  display: flex;
+  align-items: center;
+}
+
+.header-link {
+  &:not(:last-child) {
+    margin-right: 35px;
+  }
+}
+
+.header-item {
+  font-family: DM Sans, sans-serif;
+  font-style: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  text-transform: uppercase;
+
+  color: $white-color;
+  &:hover,
+  &:focus {
+    color: $main-color;
+  }
+}
+
+.button-submit {
+  width: 160px;
+  height: 45px;
+  padding: 0;
+  margin-left: auto;
+  border-radius: 22px;
+  border: none;
+  background-color: $white-color;
+
+  font-family: DM Sans, sans-serif;
+  font-style: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  text-transform: uppercase;
+
+  color: $main-color;
+  &:hover,
+  &:focus {
+    background-color: $hover-btn;
+  }
+}
+
+// HERO //
+.hero {
+  display: flex;
+  width: 100%;
+  background-color: $ice-cream;
+}
+
+.hero-titel {
+  font-family: Titan One, sans-serif;
+  font-style: 400;
+  font-size: 58px;
+  line-height: 1.11;
+  letter-spacing: 4%;
+  text-transform: uppercase;
+
+  color: $main-color;
+}
+
+.titel-box {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin-bottom: 25px;
+}
+
+.titel-first {
+  font-family: Titan One, sans-serif;
+  font-style: 400;
+  font-size: 37px;
+  line-height: 1.13;
+  letter-spacing: 4%;
+  text-transform: uppercase;
+
+  color: $white-color;
+}
+
+.button-hero1 {
+  width: 105px;
+  height: 40px;
+  margin-right: 15px;
+  border-radius: 22px;
+  border: none;
+  background-color: $main-color;
+
+  font-family: DM Sans, sans-serif;
+  font-style: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  text-transform: uppercase;
+
+  color: $white-color;
+  &:hover,
+  &:focus {
+    background-color: $hover-btnred;
+  }
+}
+
+.button-hero2 {
+  width: 140px;
+  height: 40px;
+  border-radius: 22px;
+  border: none;
+  background-color: $white-color;
+
+  font-family: DM Sans, sans-serif;
+  font-style: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  text-transform: uppercase;
+
+  color: $main-color;
+  &:hover,
+  &:focus {
+    background-color: $hover-btn;
+  }
+}
+
+.hero-text {
+  font-family: DM Sans, sans-serif;
+  font-style: 400;
+  font-size: 14px;
+  line-height: 1.42;
+  text-transform: uppercase;
+
+  color: $white-color;
+}
