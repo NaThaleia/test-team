@@ -9,7 +9,7 @@
   display: flex;
 }
 
-.header-logo {
+.logo-img {
   margin-right: 130px;
 }
 
@@ -46,13 +46,14 @@
   border-radius: 22px;
   border: none;
   background-color: $white-color;
+
   font-family: DM Sans, sans-serif;
   font-style: 700;
   font-size: 16px;
   line-height: 1.31;
   text-transform: uppercase;
-  color: $main-color;
 
+  color: $main-color;
   &:hover,
   &:focus {
     background-color: $hover-btn;
@@ -61,6 +62,8 @@
 
 // HERO //
 .hero {
+  height: 665px;
+  position: relative;
   display: flex;
   width: 100%;
   background-color: $ice-cream;
@@ -73,17 +76,22 @@
   line-height: 1.11;
   letter-spacing: 4%;
   text-transform: uppercase;
+
   color: $main-color;
 }
 
 .titel-box {
+  position: absolute;
   display: flex;
   flex-direction: column;
   width: 280px;
   margin-bottom: 25px;
+  top: 170px;
+  left: 115px;
 }
 
 .titel-first {
+  margin-bottom: 25px;
   font-family: Titan One, sans-serif;
   font-style: 400;
   font-size: 37px;
@@ -101,11 +109,13 @@
   border-radius: 22px;
   border: none;
   background-color: $main-color;
+
   font-family: DM Sans, sans-serif;
   font-style: 400;
   font-size: 14px;
   line-height: 1.28;
   text-transform: uppercase;
+
   color: $white-color;
   &:hover,
   &:focus {
@@ -119,11 +129,13 @@
   border-radius: 22px;
   border: none;
   background-color: $white-color;
+
   font-family: DM Sans, sans-serif;
   font-style: 400;
   font-size: 14px;
   line-height: 1.28;
   text-transform: uppercase;
+
   color: $main-color;
   &:hover,
   &:focus {
@@ -131,11 +143,60 @@
   }
 }
 
+.milk-box {
+  position: absolute;
+  display: flex;
+  left: 80px;
+  bottom: 45px;
+}
+
+.milk-img {
+  margin-right: 30px;
+}
+
 .hero-text {
+  width: 200px;
   font-family: DM Sans, sans-serif;
   font-style: 400;
   font-size: 14px;
   line-height: 1.42;
   text-transform: uppercase;
+
   color: $white-color;
+}
+
+.button-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  fill: $main-color;
+  background-color: $white-color;
+  &:hover,
+  &:focus {
+    background-color: $hover-btn;
+  }
+}
+
+// .hero {
+//   .hero-icecream {
+//     margin-top: 110px;
+//     margin-left: 595px;
+//   }
+// }
+
+.circle {
+  top: 55px;
+  right: 265px;
+
+  position: absolute;
+  height: 538px;
+  width: 538px;
+  border-radius: 50%;
+  border: none;
+  background-color: $second-color;
 }
