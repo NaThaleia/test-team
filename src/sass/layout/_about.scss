@@ -1,5 +1,8 @@
 .about {
   background-color: #fff5f6;
+  padding-top: 125px;
+ 
+
 }
 
 .about-pre-title {
@@ -10,7 +13,6 @@
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-
   color: #ffa5ba;
 
   @media screen and (min-width: 768px) {
@@ -29,11 +31,19 @@
   font-size: 34px;
   line-height: 1.14;
   margin: auto;
+  color: $second-color;
+}
+
+.about-title {
+  margin-bottom: 55px;
+
+  font-family: Titan One;
+  font-size: 58px;
+  line-height: 1.14;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
-  color: #d41443;
+color: #d41443;
 
   @media screen and (max-width: 767px) {
     width: 200px;
@@ -55,8 +65,16 @@
   }
 }
 
-// .about-background {
-// }
+  color: $main-color;
+}
+
+ .about-content {
+ }
+
+
+ .about-background {
+ }
+
 
 .about-foto {
   margin-top: 25px;
@@ -140,5 +158,48 @@
 
   border: none;
   background-color: #ffffff;
+
+ .about-foto {
+ }
+
+ .about-right-info {
+ }
+
+.about-sub-title {
+  margin-bottom: 35px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.76;
+  letter-spacing: 0.04em;
+
+  color: $text-color;
+}
+
+.about-text {
+  margin-bottom: 45px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.94;
+
+  letter-spacing: 0.04em;
+
+  color: $second-text-color;
+}
+
+.about-btn {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.31;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: $main-color;
+
+  border: none;
+  background-color: $white-color;
+
   border-radius: 22px;
 }
