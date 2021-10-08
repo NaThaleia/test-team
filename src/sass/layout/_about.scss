@@ -1,8 +1,6 @@
 .about {
   background-color: #fff5f6;
   padding-top: 125px;
- 
-
 }
 
 .about-pre-title {
@@ -27,23 +25,14 @@
 }
 
 .about-title {
-  font-family: Titan One;
-  font-size: 34px;
-  line-height: 1.14;
-  margin: auto;
-  color: $second-color;
-}
-
-.about-title {
   margin-bottom: 55px;
-
   font-family: Titan One;
   font-size: 58px;
   line-height: 1.14;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-color: #d41443;
+  color: #d41443;
 
   @media screen and (max-width: 767px) {
     width: 200px;
@@ -65,20 +54,8 @@ color: #d41443;
   }
 }
 
-  color: $main-color;
-}
-
- .about-content {
- }
-
-
- .about-background {
- }
-
-
 .about-foto {
   margin-top: 25px;
-
   @media screen and (min-width: 768px) {
     font-size: 50px;
   }
@@ -90,12 +67,10 @@ color: #d41443;
 
 .about-right-info {
   margin-top: 46px;
-
   @media screen and (min-width: 768px) {
     margin-top: 50px;
     max-width: 340px;
   }
-
   @media screen and (min-width: 1280px) {
     margin-top: 105px;
     width: 465px;
@@ -104,7 +79,6 @@ color: #d41443;
 
 .about-sub-title {
   margin-bottom: 35px;
-
   font-family: DM Sans;
   font-size: 12px;
   line-height: 1.62;
@@ -148,43 +122,31 @@ color: #d41443;
   font-weight: 900;
   font-size: 16px;
   line-height: 1.31;
-
   display: flex;
   justify-content: center;
   align-items: center;
   width: 175px;
   height: 45px;
   color: #d41443;
-
   border: none;
   background-color: #ffffff;
-
- .about-foto {
- }
-
- .about-right-info {
- }
+}
 
 .about-sub-title {
   margin-bottom: 35px;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.76;
   letter-spacing: 0.04em;
-
   color: $text-color;
 }
 
 .about-text {
   margin-bottom: 45px;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.94;
-
   letter-spacing: 0.04em;
-
   color: $second-text-color;
 }
 
@@ -195,11 +157,8 @@ color: #d41443;
   display: flex;
   align-items: center;
   text-align: center;
-
   color: $main-color;
-
   border: none;
   background-color: $white-color;
-
   border-radius: 22px;
 }
