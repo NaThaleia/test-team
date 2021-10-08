@@ -6,13 +6,13 @@
 // Стили для файла с примером HTML-фрагмента
 @import './utils/variables';
 
-
 @import './base/body';
 @import './base/reset';
 @import './components/container';
 @import './layout/header-hero';
 
 @import './layout/about';
+@import './layout/contacts';
 @import './layout/customer-reviews';
 @import './layout/footer';
 @import './layout/products';
