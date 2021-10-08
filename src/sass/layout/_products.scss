@@ -25,4 +25,34 @@
 }
 .card-set::before {
   background-image: url(../images/products/ice-cream-mobile1x.png);
+  display: block;
+  position: absolute;
+}
+.title-second {
+  font-family: Titan One;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1.15;
+  line-height: 100%;
+  align-items: center;
+  letter-spacing: 4%;
+  text-align: center;
+  color: $white-color;
+}
+.text {
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.5;
+  line-height: 152%;
+  align-items: center;
+  letter-spacing: 4%;
+  text-align: center;
+  color: $white-color;
+}
+.title-second::after {
+  content: url(../images/icons.svg#icon-Group-3);
+  width: 26px;
+  height: 6px;
+  display: block;
 }
