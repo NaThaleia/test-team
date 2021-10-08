@@ -220,7 +220,10 @@
 // Work
 
 .contacts-schedule {
+  padding-left: 0;
+  list-style-type: none;
   border-bottom: 1px solid #e1e1e1;
+
   @media screen and (max-width: 767px) {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -299,6 +302,9 @@
 
 // Contact
 .contacts-info {
+  padding-left: 0;
+  list-style-type: none;
+
   @media screen and (max-width: 767px) {
     padding-top: 25px;
   }
