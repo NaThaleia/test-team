@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/products/ice-cream-mobile1x.png":[["ice-cream-mobile1x.38ce2420.png","wKRQ"],"wKRQ"],"./../images/icons.svg":[["icons.d1886145.svg","nNTp"],"nNTp"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/test-team/src.0c85ac3f.js.map
+//# sourceMappingURL=/test-team/src.fae5cb39.js.map
