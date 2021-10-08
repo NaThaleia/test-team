@@ -27,10 +27,11 @@
   background-color: #ffb8ca;
 }
 .card-set::before {
-  top: 0;
-  left: 0;
-
-  content: '';
+  top: 20px;
+  left: 100px;
+  width: 249px;
+  height: 252px;
+  content: ' ';
   display: block;
   background-position: center;
   background-size: cover;
