@@ -15,7 +15,7 @@
     padding-top: 0;
     padding-bottom: 63px;
 
-    // background-image: url('./images/contacts/contacts-bg-desc1x.png');
+    background-image: url('../images/contacts/contacts-bg-desc1x.png');
     background-repeat: no-repeat;
     background-position: left top;
     background-size: 100%;
@@ -25,7 +25,7 @@
       screen and (-o-min-device-pixel-ratio: 2/1),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      // background-image: url('./images/contacts/contacts-bg-desc2x.png');
+      background-image: url('../images/contacts/contacts-bg-desc2x.png');
     }
   }
 }
@@ -46,12 +46,13 @@
 
   @media screen and (min-width: 1200px) {
     bottom: 102px;
-    padding-right: 95px;
-    padding-left: 95px;
   }
 }
 
 .contacts__row {
+  padding-left: 0;
+  margin: 0;
+  list-style-type: none;
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
@@ -219,7 +220,10 @@
 // Work
 
 .contacts-schedule {
+  padding-left: 0;
+  list-style-type: none;
   border-bottom: 1px solid #e1e1e1;
+
   @media screen and (max-width: 767px) {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -298,6 +302,9 @@
 
 // Contact
 .contacts-info {
+  padding-left: 0;
+  list-style-type: none;
+
   @media screen and (max-width: 767px) {
     padding-top: 25px;
   }
@@ -312,6 +319,8 @@
 }
 
 .contacts-info__link {
+  text-decoration: none;
+
   @media screen and (max-width: 767px) {
     color: $second-text-color;
     font-size: 12px;
