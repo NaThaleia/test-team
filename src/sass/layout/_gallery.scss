@@ -1,0 +1,44 @@
+.gallery-section {
+margin-left: 0px;
+margin-bottom: 30px;
+background-image: linear-gradient(to bottom, #fff5f6 50%, #ffffff 50%);
+width: 100vw;
+height: 122px;
+position: relative;
+
+@media screen and (min-width: 320px) {
+  max-width: 768px;
+}
+
+@media screen and (min-width: 768px) {
+  max-width: 1200px;
+  height: 264px;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1200px) {
+  max-width: 1280px;
+  height: 430px;
+
+} 
+}
+.gallery-thumb__image {
+ width: 100vw;   
+position: absolute;
+transform: translateY(10%);
+left: 0;
+top: 0;
+
+ @media screen and (min-width: 480px) {
+   max-width: 768px;
+   transform: translate(15%, 10%);
+}
+@media screen and (min-width: 768px) {
+    max-width: 768px;
+    transform: translateY(10%);
+}
+@media screen and (min-width: 1200px) {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+}

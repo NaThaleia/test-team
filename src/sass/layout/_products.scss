@@ -1,22 +1,39 @@
+.section-card {
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
+
 .smoll-title {
+  @media (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
   font-family: Titan One;
   font-style: normal;
   font-size: 18px;
   line-height: 1.16;
+  text-transform: uppercase;
   line-height: 100%;
   align-items: center;
   color: $second-color;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 15px;
 }
 
 .title {
-  margin-bottom: 100px;
+  @media (min-width: 768px) {
+    margin-bottom: 39px;
+    font-size: 48px;
+    line-height: 1.14;
+  }
+  margin-bottom: 31px;
   font-family: Titan One;
   font-style: normal;
   font-size: 34px;
   line-height: 1.14;
+  text-transform: uppercase;
   line-height: 100%;
   align-items: center;
   letter-spacing: 4%;
@@ -24,15 +41,32 @@
   color: $main-color;
 }
 .card {
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: flex-end;
+  }
   align-items: center;
 }
 .card-set {
+  @media (min-width: 768px) {
+  }
+  padding-top: 113px;
   align-items: center;
   height: 598px;
+
   justify-content: center;
   position: relative;
+  &:not(:last-child) {
+    margin-bottom: 16px;
+    @media (min-width: 768px) {
+      margin-bottom: 0px;
+    }
+  }
 }
 .card-set-cream {
+  @media (min-width: 768px) {
+    display: none;
+  }
   width: 280px;
   height: 485px;
   border-radius: 24px;
@@ -53,11 +87,14 @@
   background-position: center;
   background-size: cover;
   position: absolute;
-
   background-image: url(../images/products/ice-cream-mobile1x.png),
     url(../images/products/ice-cream-mobile2x.png);
 }
 .card-set-coffee {
+  @media (min-width: 768px) {
+    margin-right: 20px;
+    width: 220px;
+  }
   width: 280px;
   height: 485px;
   border-radius: 24px;
@@ -68,6 +105,10 @@
   margin-left: auto;
 }
 .card-set-coffee::before {
+  @media (min-width: 768px) {
+    width: 220px;
+    left: 3px;
+  }
   top: -113px;
   left: 17px;
   width: 249px;
@@ -83,6 +124,9 @@
     url(../images/products/ice-coffee-mobile2x.png);
 }
 .card-set-milkshakes {
+  @media (min-width: 768px) {
+    width: 220px;
+  }
   width: 280px;
   height: 485px;
   border-radius: 24px;
@@ -93,6 +137,11 @@
   margin-left: auto;
 }
 .card-set-milkshakes::before {
+  @media (min-width: 768px) {
+    width: 220px;
+    left: 3px;
+  }
+
   top: -113px;
   left: 17px;
   width: 249px;
@@ -109,19 +158,25 @@
 .title-second {
   font-family: Titan One;
   font-style: normal;
+  font-weight: 500;
   font-size: 20px;
   line-height: 1.15;
   line-height: 100%;
-  align-items: center;
-  letter-spacing: 4%;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
   text-align: center;
   color: $white-color;
-  padding-top: 170px;
+  padding-top: 161px;
 }
 
 .text {
+  @media (min-width: 768px) {
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 176%;
+  }
   font-family: DM Sans;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
   line-height: 152%;
@@ -129,29 +184,47 @@
   letter-spacing: 0.04em;
   text-align: center;
   color: $white-color;
-  padding-top: 50px;
   padding-left: 45px;
   padding-right: 45px;
+  margin-bottom: 40px;
 }
 .title-second::after {
+  @media (min-width: 768px) {
+    left: 97px;
+  }
   background-image: url(../images/products/three-points.svg);
   content: ' ';
-  width: 26px;
+  width: 29px;
   height: 6px;
-  left: 128px;
-  top: 220px;
+
   display: block;
   background-position: center;
   background-size: cover;
-  position: absolute;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .button-card {
+  @media (min-width: 768px) {
+    left: 100px;
+  }
   width: 40px;
   height: 40px;
   border-radius: 50px;
   background-color: $white-color;
   border: 0px;
-  position: absolute;
   top: 380px;
   left: 120px;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+}
+.icon-arrow {
+  fill: #d41443;
+  width: 13px;
+  height: 13px;
+  align-items: center;
 }
