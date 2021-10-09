@@ -456,8 +456,10 @@
     padding-right: 17px;
   }
 
-  // &:hover {
+  // &:hover,
+  // &:focus {
   //   background-color: #ecebeb;
+  //   transition: $cubic;
   // }
 }
 .button-arrow {
