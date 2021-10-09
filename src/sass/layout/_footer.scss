@@ -1,6 +1,6 @@
 .footer {
   width: 100%;
-  background-color: var(--bg-color);
+  background-color: $bg-color;
   &__main {
     display: flex;
     flex-wrap: wrap;
@@ -81,6 +81,9 @@
   width: 152px;
   margin-left: auto;
   margin-bottom: 46px;
+  @media screen and (min-width: 768px) {
+    width: 162px;
+  }
   @media screen and (min-width: 1280px) {
     margin-bottom: 50px;
   }
@@ -100,6 +103,12 @@
     align-items: center;
     background-color: $second-color;
     border-radius: 50%;
+    transition: transform 0.2s;
+    &:hover,
+    &:focus {
+      background-color: $main-color;
+      transform: scale(1.2);
+    }
   }
   &__icon {
     fill: $white-color;
