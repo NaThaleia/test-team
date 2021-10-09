@@ -1,12 +1,38 @@
 .header {
-  display: flex;
-  align-items: center;
-  width: 100%;
   background-color: $ice-cream;
+}
+
+.header-conteiner {
+  display: flex;
+  // justify-content: center;
+  // align-items: center;
+  width: 100%;
+  padding-top: 7px;
+  padding-left: 20px;
+  // padding-right: 20px;
+  // margin: 0 auto;
+  @media screen and (min-width: 320px) {
+    max-width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+    padding-left: 35px;
+    padding-right: 35px;
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 40px;
+    padding-left: 45px;
+    padding-right: 115px;
+    max-width: 1280px;
+  }
 }
 
 .header-nav {
   display: flex;
+  @media screen and (min-width: 320px) and (max-width: 1179px) {
+    display: none;
+  }
 }
 
 .logo-img {
@@ -16,6 +42,9 @@
 .haeder-list {
   display: flex;
   align-items: center;
+  @media screen and (max-wight: 1199px) {
+    display: none;
+  }
 }
 
 .header-link {
@@ -42,9 +71,9 @@
   width: 160px;
   height: 45px;
   padding: 0;
-  margin-left: auto;
   border-radius: 22px;
   border: none;
+  margin-left: auto;
   background-color: $white-color;
 
   font-family: DM Sans, sans-serif;
@@ -57,6 +86,9 @@
   &:hover,
   &:focus {
     background-color: $hover-btn;
+  }
+  @media screen and (max-width: 1179px) {
+    display: none;
   }
 }
 
@@ -182,21 +214,47 @@
   }
 }
 
-// .hero {
-//   .hero-icecream {
-//     margin-top: 110px;
-//     margin-left: 595px;
-//   }
-// }
-
 .circle {
   top: 55px;
   right: 265px;
 
-  position: absolute;
   height: 538px;
   width: 538px;
   border-radius: 50%;
   border: none;
   background-color: $second-color;
+}
+
+.hero-icecream {
+  position: absolute;
+  bottom: 0;
+  right: 30px;
+  @media screen and (min-width: 320px) {
+    max-width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    right: 275px;
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1280px) {
+    right: 450px;
+    max-width: 1280px;
+  }
+}
+
+.hero-girl {
+  position: absolute;
+  bottom: 0;
+  right: 35px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    // display: none;
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1280px) {
+    right: 110px;
+    max-width: 1280px;
+  }
 }
