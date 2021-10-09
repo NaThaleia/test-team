@@ -103,7 +103,7 @@
     align-items: center;
     background-color: $second-color;
     border-radius: 50%;
-    transition: transform 0.2s;
+    transition: transform $cubic;
     &:hover,
     &:focus {
       background-color: $main-color;
@@ -121,7 +121,6 @@
   height: 89px;
   border-top: 1px solid #e1e1e1;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   @media screen and (min-width: 768px) {
