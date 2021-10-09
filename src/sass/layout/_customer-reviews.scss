@@ -29,7 +29,7 @@
     height: 140px;
 
     margin-bottom: 34px;
-    padding: 32px 50px 32px 50px;
+    padding: 35px 50px 35px 50px;
 
     background-color: $backcolor;
 
@@ -37,12 +37,47 @@
     line-height: calc(30 / 16);
     text-align: center;
     letter-spacing: 0.04em;
+
+    &::before {
+        content: "тест";
+        display: block;
+        width: 54px;
+        height: 40px;
+        background-color: rgba(33, 33, 33, 0.2);
+
+        // transform: rotate(90deg);
+        // transform-origin: 50% 50%;
+        transform: translateX(50px);
+        transform: translateY(-15px);
+
+        position: absolute;
+        // margin-top: -15px;
+        // top: 15px;
+    }
 }
 
 .customer-reviews__titl {
+    display: block;
     font-size: 20px;
     line-height: calc(37 / 20);
-    text-align: center; 
+    text-align: center;
+    
+    &::before {
+        content: ". . .";
+        display: block;
+        // width: 22px;
+        // height: 1px;
+        background-color: rgba(33, 33, 33, 0.2);
+
+        // transform: rotate(90deg);
+        // transform-origin: 50% 50%;
+        transform: translateX(50px);
+        transform: translateY(-15px);
+
+        position: absolute;
+        // margin-top: -15px;
+        // top: 15px;
+    }
 }
 
 .customer-reviews__dots {
