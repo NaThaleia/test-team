@@ -6,14 +6,12 @@
   line-height: 41px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-
   color: #d41443;
 }
 .advantages-list__text {
   font-weight: 700;
   font-size: 12px;
   line-height: 170%;
-
   color: #000000;
 }
 .advantages-list {
@@ -22,7 +20,6 @@
 .advantages-list__item::before {
   top: 0;
   left: 0;
-
   content: '';
   display: block;
   background-position: center;

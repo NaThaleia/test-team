@@ -25,12 +25,10 @@
 }
 
 .header-item {
-  font-family: DM Sans, sans-serif;
   font-style: 700;
   font-size: 16px;
   line-height: 1.31;
   text-transform: uppercase;
-
   color: $white-color;
   &:hover,
   &:focus {
@@ -46,13 +44,10 @@
   border-radius: 22px;
   border: none;
   background-color: $white-color;
-
-  font-family: DM Sans, sans-serif;
   font-style: 700;
   font-size: 16px;
   line-height: 1.31;
   text-transform: uppercase;
-
   color: $main-color;
   &:hover,
   &:focus {
@@ -76,7 +71,6 @@
   line-height: 1.11;
   letter-spacing: 4%;
   text-transform: uppercase;
-
   color: $main-color;
 }
 
@@ -98,7 +92,6 @@
   line-height: 1.13;
   letter-spacing: 4%;
   text-transform: uppercase;
-
   color: $white-color;
 }
 
@@ -109,13 +102,10 @@
   border-radius: 22px;
   border: none;
   background-color: $main-color;
-
-  font-family: DM Sans, sans-serif;
   font-style: 400;
   font-size: 14px;
   line-height: 1.28;
   text-transform: uppercase;
-
   color: $white-color;
   &:hover,
   &:focus {
@@ -129,13 +119,10 @@
   border-radius: 22px;
   border: none;
   background-color: $white-color;
-
-  font-family: DM Sans, sans-serif;
   font-style: 400;
   font-size: 14px;
   line-height: 1.28;
   text-transform: uppercase;
-
   color: $main-color;
   &:hover,
   &:focus {
@@ -156,12 +143,10 @@
 
 .hero-text {
   width: 200px;
-  font-family: DM Sans, sans-serif;
   font-style: 400;
   font-size: 14px;
   line-height: 1.42;
   text-transform: uppercase;
-
   color: $white-color;
 }
 
@@ -192,7 +177,6 @@
 .circle {
   top: 55px;
   right: 265px;
-
   position: absolute;
   height: 538px;
   width: 538px;
