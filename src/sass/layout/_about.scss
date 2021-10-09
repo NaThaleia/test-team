@@ -1,6 +1,7 @@
 .about {
   background-color: $bg-color;
   padding-top: 125px;
+  padding-bottom: 40px;
 }
 
 .about-pre-title {
@@ -25,11 +26,11 @@
 }
 
 .about-title {
-  margin-bottom: 55px;
   font-family: Titan One;
-  font-size: 58px;
+  font-size: 34px;
   line-height: 1.14;
   text-align: center;
+  margin: auto;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $main-color;
@@ -57,7 +58,7 @@
 .about-foto {
   margin-top: 25px;
   @media screen and (min-width: 768px) {
-    font-size: 50px;
+    margin-top: 50px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -73,7 +74,7 @@
   }
   @media screen and (min-width: 1280px) {
     margin-top: 105px;
-    width: 465px;
+    max-width: 465px;
   }
 }
 
@@ -82,6 +83,7 @@
   font-size: 12px;
   line-height: 1.62;
   letter-spacing: 0.04em;
+  color: $text-color;
 
   @media screen and (min-width: 480px) {
     font-size: 14px;
@@ -115,28 +117,6 @@
   }
 }
 
-.about-btn {
-  font-weight: 900;
-  font-size: 16px;
-  line-height: 1.31;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 175px;
-  height: 45px;
-  color: $main-color;
-  border: none;
-  background-color: #ffffff;
-}
-
-.about-sub-title {
-  margin-bottom: 35px;
-  font-size: 16px;
-  line-height: 1.76;
-  letter-spacing: 0.04em;
-  color: $text-color;
-}
-
 .about-text {
   margin-bottom: 45px;
   font-size: 14px;
@@ -151,9 +131,22 @@
   line-height: 1.31;
   display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
+  width: 175px;
+  height: 45px;
   color: $main-color;
   border: none;
   background-color: $white-color;
   border-radius: 22px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $hover-btn;
+  }
+}
+
+.btn-arow {
+  margin-left: 14px;
+  margin-top: 3px;
 }
