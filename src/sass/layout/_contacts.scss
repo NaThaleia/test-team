@@ -14,24 +14,24 @@
   @media screen and (min-width: 1200px) {
     padding-top: 0;
     padding-bottom: 63px;
-
     background-image: url('images/contacts/contacts-bg-desc1x.png');
     background-repeat: no-repeat;
     background-position: left top;
     background-size: 100%;
-
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (-webkit-min-device-pixel-ratio: 2),
-      screen and (-o-min-device-pixel-ratio: 2/1),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: url('images/contacts/contacts-bg-desc2x.png');
-    }
   }
 }
 
+//   @media screen and (min-device-pixel-ratio: 2) {
+//     screen and (-webkit-min-device-pixel-ratio: 2),
+//     screen and (-o-min-device-pixel-ratio: 2/1),
+//     screen and (min-resolution: 192dpi),
+//     screen and (min-resolution: 2dppx) {
+//     background-image: url('images/contacts/contacts-bg-desc2x.png');
+// }
+
 .contacts {
   position: relative;
+
   @media screen and (max-width: 767px) {
     bottom: 84px;
     padding-right: 30px;
@@ -53,6 +53,7 @@
   padding-left: 0;
   margin: 0;
   list-style-type: none;
+
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
@@ -78,10 +79,11 @@
     @media screen and (min-width: 1200px) {
       margin-right: 31px;
     }
-  }
-  @media screen and (min-width: 450px) and (max-width: 767px) {
-    display: flex;
-    justify-content: center;
+
+    @media screen and (min-width: 450px) and (max-width: 767px) {
+      display: flex;
+      justify-content: center;
+    }
   }
 }
 
@@ -115,6 +117,7 @@
 
 .contacts-addr {
   border-bottom: 1px solid #e1e1e1;
+
   @media screen and (max-width: 767px) {
     padding-bottom: 25px;
   }
@@ -450,11 +453,12 @@
   border: none;
   border-radius: 22px;
   cursor: pointer;
-
-  // &:hover {
-  //   background-color: #ecebeb;
-  // }
 }
+
+// &:hover {
+//   background-color: #ecebeb;
+// }
+
 .button-arrow {
   padding-left: 14px;
   padding-top: 2px;
