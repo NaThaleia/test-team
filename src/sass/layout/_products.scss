@@ -280,6 +280,11 @@
   margin-left: auto;
   display: flex;
   justify-content: center;
+  transition: $cubic;
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+  }
 }
 .icon-arrow {
   fill: #d41443;
