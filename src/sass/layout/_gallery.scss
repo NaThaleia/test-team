@@ -81,10 +81,20 @@ position: relative;
 .gallery-thumb__item {
   display: flex;
   margin-bottom: 8px;
+  transition: $cubic;
+  &:focus, 
+  &:hover{
+transform: scale(2,2);
+  }
 }
 .gallery-thumb__item--small {
   display: flex;
   width: 50%;
+  transition: $cubic;
+  &:focus,
+  &:hover {
+    transform: scale(2, 2);
+  }
  
 }
 // .gallery-section {
