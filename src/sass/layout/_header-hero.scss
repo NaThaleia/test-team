@@ -111,6 +111,7 @@
   position: relative;
   display: flex;
   width: 100%;
+  overflow: hidden;
   background-color: $ice-cream;
 }
 
@@ -190,8 +191,7 @@
   width: 345px;
   border-radius: 50%;
   border: none;
-  min-width: 345px;
-  overflow: hidden;
+
   top: 45px;
   left: 36px;
 
@@ -214,6 +214,7 @@
 .hero-icecream {
   position: absolute;
   bottom: 0;
+  top: 92px;
   right: 30px;
   @media screen and (min-width: 320px) {
     max-width: 480px;
@@ -235,7 +236,7 @@
   position: absolute;
   z-index: 1;
   width: 218px;
-  top: 50%;
+  top: 190px;
 
   @media screen and (min-width: 320px) {
     max-width: 480px;
