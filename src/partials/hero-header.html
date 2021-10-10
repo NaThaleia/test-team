@@ -1,5 +1,5 @@
 <header class="header">
-  <div class="header-container container">
+  <div class="container">
     <div class="logo">
       <img class="logo-img" srcset="./images/logo1x.png 1x, ./images/logo2x.png 2x" alt="Logo" />
     </div>
@@ -43,7 +43,13 @@
       </div>
     </div>
     <div class="milk-box">
-      <img class="milk-img" src="./images/hero/hero-milk-desc1x.png" alt="BioEco" />
+      <picture class="picture-icecream">
+        <source srcset="./images/hero/hero-milk-desc1x.png 1x, ./images/hero/hero-milk-desc2x.png 2x"
+          media="(min-widht:1280px)">
+        <source srcset="./images/hero/hero-milk-tablet1x.png 1x, ./images/hero/hero-milk-tablet2x.png 2x"
+          media="(min-widht:768px)">
+        <img src="./images/hero/hero-milk-desc1x.png" alt="BioEco">
+      </picture>
     </div>
     <div class="milk-text">
       <p class="hero-text">
@@ -61,11 +67,11 @@
       <div class="hero-icecream">
         <picture class="picture-icecream">
           <source srcset="./images/hero/hero-ice-cream-desc1x.png 1x, ./images/hero/hero-ice-cream-desc2x.png 2x"
-            media="(min-wight:1280px)">
-          <source srcset="./images/hero/hero-ice-cream-tablet1x.png 1x, ./images/hero/hero-ice-cream-tablet2x.png 2x"
-            media="(min-wight:768px)">
+            media="(min-widht:1280px)">
+            <source srcset="./images/hero/hero-ice-cream-tablet1x.png 1x, ./images/hero/hero-ice-cream-tablet2x.png 2x"
+              media="(min-widht:768px)">
           <source srcset="./images/hero/hero-ice-cream-mobile1x.png 1x, ./images/hero/hero-ice-cream-mobile2x.png 2x"
-            media="(min-wight:320px)">
+            media="(min-widht:320px)">
           <img src="./images/hero/hero-ice-cream-desc1x.png" alt="IceCream">
         </picture>
       </div>
@@ -73,9 +79,9 @@
     <div class="hero-girl">
       <picture class="picture-girl">
         <source srcset="./images/hero/hero-girl-desc1x.png 1x, ./images/hero/hero-girl-desc2x.png 2x"
-          media="(min-wight:1280px)">
+          media="(min-widht:1280px)">
         <source srcset="./images/hero/hero-girl-tablet1x.png 1x, ./images/hero/hero-girl-tablet2x.png 2x"
-          media="(min-wight:768px)">
+          media="(min-widht:768px)">
         <img src="./images/hero/hero-girl-desc1x.png" alt="Girl">
       </picture>
   </div>

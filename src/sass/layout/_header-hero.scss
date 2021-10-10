@@ -2,9 +2,9 @@
   background-color: $ice-cream;
 }
 
-.header-container {
+.header .container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   width: 100%;
   margin: 0 auto;
@@ -107,12 +107,16 @@
 
 // ------------------HERO----------------------- //
 .hero {
-  height: 665px;
+  min-height: 665px;
   position: relative;
   display: flex;
   width: 100%;
   overflow: hidden;
   background-color: $ice-cream;
+}
+
+.hero .container {
+  position: relative;
 }
 
 .milk-box {
@@ -207,6 +211,8 @@
     max-width: 768px;
   }
   @media screen and (min-width: 1280px) {
+    top: 0px;
+    left: 360px;
     height: 538px;
     width: 538px;
     max-width: 1280px;
@@ -216,7 +222,6 @@
 .hero-icecream {
   position: absolute;
   bottom: 0;
-  top: 92px;
   right: 30px;
   @media screen and (min-width: 320px) {
     max-width: 480px;
@@ -244,6 +249,7 @@
     max-width: 480px;
   }
   @media screen and (min-width: 768px) {
+    top: 10px;
     width: 162px;
     max-width: 768px;
   }
