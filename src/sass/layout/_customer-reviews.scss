@@ -54,7 +54,7 @@
         display: block;
         width: 54px;
         height: 40px;
-        background-image: url(../images/customers/quotes-x1.png);
+        background-image: url(./images/customers/quotes-x1.png);
 
         position: absolute;
         z-index: -1;
@@ -77,7 +77,7 @@
         display: block;
         width: 32px;
         height: 4px;
-        background-image: url(../images/customers/dots-x1.png);
+        background-image: url(./images/customers/dots-x1.png);
 
         position: absolute;
 
@@ -95,7 +95,18 @@
     align-items: center;
 }
 
+.customer-reviews__dot--icon {
+    display: block;
+    margin-right: 18px;
+}
+
+.customer-reviews__icon {
+    display: block;
+    fill: #D31342;
+}
+
 .customer-reviews__dot {
+    display: block;
     width: 12px;
     height: 12px;
     background-color: $dots;
@@ -104,8 +115,4 @@
     &:not(:last-child) {
 		margin-right: 18px;
 	}
-}
-
-.customer-reviews__icon {
-    
 }
