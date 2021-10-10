@@ -47,12 +47,13 @@
 }
 
 .customer-reviews__box {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 280px;
   height: 308px;
 
   margin-bottom: 52px;
-  padding: 26px 50px 20px 50px;
 
   background-color: $backcolor;
 
@@ -61,7 +62,6 @@
     height: 164px;
 
     margin-bottom: 42px;
-    padding: 30px 36px 28px 40px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -69,54 +69,39 @@
     height: 138px;
 
     margin-bottom: 34px;
-    padding: 32px 50px;
+  }
+}
+
+.customer-reviews__gradient {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 180px;
+  height: 240px;
+
+  background-image: repeating-linear-gradient($backcolor, $backcolor 29px, $lines 29px, $lines 30px);
+
+  @media screen and (min-width: 768px) {
+    width: 550px;
+    height: 90px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 820px;
+    height: 60px;
   }
 }
 
 .customer-reviews__text {
   display: block;
-  width: 180px;
-  height: 260px;
+  width: 160px;
+  height: 240px;
 
-  padding: 15px 15px 6px 7px;
   font-size: 12px;
   line-height: calc(31 / 12);
   text-align: center;
   letter-spacing: 0.04em;
-  background-image: repeating-linear-gradient(
-    $backcolor,
-    $backcolor 40px,
-    $lines 40px,
-    $lines 41px,
-    $backcolor 41px,
-    $backcolor 71px,
-    $lines 71px,
-    $lines 72px,
-    $backcolor 72px,
-    $backcolor 102px,
-    $lines 102px,
-    $lines 103px,
-    $backcolor 103px,
-    $backcolor 133px,
-    $lines 133px,
-    $lines 134px,
-    $backcolor 134px,
-    $backcolor 164px,
-    $lines 164px,
-    $lines 165px,
-    $backcolor 165px,
-    $backcolor 195px,
-    $lines 195px,
-    $lines 196px,
-    $backcolor 196px,
-    $backcolor 226px,
-    $lines 226px,
-    $lines 227px,
-    $backcolor 227px,
-    $backcolor 254px,
-    $lines 254px,
-    $lines 255px
-  );
 
   position: relative;
   z-index: 2;
@@ -131,54 +116,32 @@
     position: absolute;
     z-index: -1;
 
-    top: 0;
-    left: 0;
+    top: -15px;
+    left: -10px;
+
+    @media screen and (min-width: 768px) {
+      left: -30px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      
+    }
   }
 
   @media screen and (min-width: 768px) {
-    width: 544px;
-    height: 106px;
-
-    padding: 17px 44px 6px 40px;
+    width: 480px;
+    height: 90px;
 
     font-size: 14px;
     line-height: calc(30 / 14);
-
-    background-image: repeating-linear-gradient(
-      $backcolor,
-      $backcolor 43px,
-      $lines 43px,
-      $lines 44px,
-      $backcolor 44px,
-      $backcolor 74px,
-      $lines 74px,
-      $lines 75px,
-      $backcolor 75px,
-      $backcolor 102px,
-      $lines 102px,
-      $lines 103px
-    );
   }
 
   @media screen and (min-width: 1280px) {
-    width: 822px;
-    height: 74px;
-
-    padding: 15px 35px 7px 37px;
+    width: 750px;
+    height: 60px;
 
     font-size: 16px;
     line-height: calc(30 / 16);
-
-    background-image: repeating-linear-gradient(
-      $backcolor,
-      $backcolor 43px,
-      $lines 43px,
-      $lines 44px,
-      $backcolor 44px,
-      $backcolor 74px,
-      $lines 74px,
-      $lines 75px
-    );
   }
 }
 
