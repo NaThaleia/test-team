@@ -10,20 +10,12 @@
   transition: $cubic;
 }
 // Стили правой кнопки хедера
-.button-submit {
-  width: 160px;
-  height: 45px;
-  padding: 0;
-  border-radius: 22px;
-  border: none;
+.header-button_right {
+  @include button();
+  @include flex-center();
+  justify-content: flex-end;
+  padding: 0 37px;
   background-color: $white-color;
-
-  font-family: DM Sans, sans-serif;
-  font-style: 700;
-  font-size: 16px;
-  line-height: 1.31;
-  text-transform: uppercase;
-
   color: $main-color;
   &:hover,
   &:focus {
@@ -32,12 +24,6 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
-}
-.header-button_right {
-  @include flex-center();
-  justify-content: flex-end;
-  padding: 0 40px;
-  @include button();
 }
 // Стили кнопок секции contacts
 .contacts-button__white {
@@ -76,7 +62,7 @@
     background-color: $hover-btnred;
   }
 }
-// Подключенная иконка-стрелка вправо. Стили
+// Подключенная иконка-стрелка вправо внутри кнопки. Стили
 .fa-angle-right {
   color: $main-color;
   text-align: center;
