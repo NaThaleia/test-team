@@ -4,6 +4,24 @@
   padding-bottom: 40px;
 }
 
+.about-background {
+  margin-left: auto;
+  margin-right: auto;
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @media screen and (max-width: 767px) {
+    background-image: url(../images/about/about-bg-mobile1x.png);
+    background-position-y: 90%;
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/about/about-bg-desc1x.png);
+    background-position: bottom;
+  }
+}
+
 .about-pre-title {
   margin-bottom: 15px;
   font-size: 18px;
@@ -57,9 +75,6 @@
 
 .about-foto {
   margin-top: 25px;
-  @media screen and (min-width: 768px) {
-    margin-top: 50px;
-  }
 
   @media screen and (min-width: 1280px) {
     margin-top: 55px;
@@ -83,6 +98,7 @@
   font-size: 12px;
   line-height: 1.62;
   letter-spacing: 0.04em;
+
   color: $text-color;
 
   @media screen and (min-width: 480px) {
@@ -117,14 +133,6 @@
   }
 }
 
-.about-text {
-  margin-bottom: 45px;
-  font-size: 14px;
-  line-height: 1.94;
-  letter-spacing: 0.04em;
-  color: $second-text-color;
-}
-
 .about-btn {
   font-weight: 900;
   font-size: 16px;
@@ -143,6 +151,10 @@
   &:hover,
   &:focus {
     background-color: $hover-btn;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin: auto;
   }
 }
 
