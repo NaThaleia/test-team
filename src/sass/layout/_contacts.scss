@@ -395,11 +395,19 @@
 }
 
 .contacts-buttons__link--white {
-  color: $main-color;
-  background: $white-color;
+  font-weight: 900;
   font-size: 16px;
-  font-weight: 700;
   line-height: 1.31;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 175px;
+  height: 45px;
+  color: $main-color;
+  border: none;
+  background-color: $white-color;
+  border-radius: 22px;
+  cursor: pointer;
   text-decoration: none;
 
   @media screen and (max-width: 767px) {
@@ -410,6 +418,12 @@
   @media screen and (min-width: 768px) {
     margin-left: 15px;
     padding: 12px 39px;
+  }
+
+  &:hover,
+  &:focus {
+    background: $hover-btn;
+    transition: $cubic;
   }
 }
 
@@ -458,11 +472,11 @@
     padding-right: 17px;
   }
 
-  // &:hover,
-  // &:focus {
-  //   background-color: #ecebeb;
-  //   transition: $cubic;
-  // }
+  &:hover,
+  &:focus {
+    background-color: $hover-btnred;
+    transition: $cubic;
+  }
 }
 .button-arrow {
   padding-left: 14px;
