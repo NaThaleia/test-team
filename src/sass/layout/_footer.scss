@@ -150,3 +150,23 @@
     }
   }
 }
+// Стили для иконки прокрутки сайта вверх
+.scrollup {
+  position: fixed;
+  color: $white-color;
+  background-color: $main-color;
+  right: 20px;
+  bottom: 0px;
+  padding: 4px 10px;
+  font-size: 20px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  cursor: pointer;
+  display: none;
+  text-align: center;
+  transition: transform $cubic;
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+}
