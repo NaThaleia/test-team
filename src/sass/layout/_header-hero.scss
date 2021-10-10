@@ -4,41 +4,44 @@
 
 .header-container {
   display: flex;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;
-  padding-top: 10px;
   margin: 0 auto;
-
-  @media screen and (min-width: 320px) {
-    max-width: 480px;
+  padding-top: 47px;
+  padding-bottom: 45px;
+  @media screen and (max-width: 767px) {
+    padding-top: 25px;
+    padding-bottom: 15px;
   }
-  @media screen and (min-width: 768px) {
-    padding-top: 35px;
-    max-width: 768px;
-  }
-  @media screen and (min-width: 1280px) {
-    padding-top: 35px;
-    max-width: 1280px;
+  @media screen and (max-width: 1279px) {
+    justify-content: flex-end;
   }
 }
 
 .header-nav {
   display: flex;
-  @media screen and (max-width: 1179px) {
+  @media screen and (max-width: 1279px) {
     display: none;
   }
 }
 
-.logo-img {
-  margin-right: 130px;
+.logo {
+  position: absolute;
+  top: 7px;
+  left: 20px;
+  @media screen and (min-width: 768px) {
+    top: 40px;
+    left: 35px;
+  }
+  @media screen and (min-width: 1280px) {
+    left: 45px;
+  }
 }
 
 .haeder-list {
   display: flex;
   align-items: center;
-  @media screen and (max-wight: 1199px) {
-    display: none;
-  }
 }
 
 .header-link {
@@ -48,12 +51,10 @@
 }
 
 .header-item {
-  font-family: DM Sans, sans-serif;
   font-style: 700;
   font-size: 16px;
   line-height: 1.31;
   text-transform: uppercase;
-
   color: $white-color;
   &:hover,
   &:focus {
@@ -69,8 +70,6 @@
   border: none;
   background-color: $white-color;
 
-  font-family: DM Sans, sans-serif;
-  font-style: 700;
   font-size: 16px;
   line-height: 1.31;
   text-transform: uppercase;
@@ -90,7 +89,10 @@
   height: 12px;
   padding: 0;
   border: none;
-  fill: aqua;
+  // background: transparent;
+  @media screen and (max-width: 767px) {
+    margin-right: 30px;
+  }
   @media screen and (min-width: 768px) {
     margin-right: 30px;
   }
@@ -98,17 +100,141 @@
     display: none;
   }
 }
+
+.icon-burger-open {
+  fill: black;
+}
+
 // ------------------HERO----------------------- //
 .hero {
   height: 665px;
   position: relative;
   display: flex;
   width: 100%;
+  overflow: hidden;
   background-color: $ice-cream;
 }
 
+.milk-box {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  bottom: 45px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    bottom: 30px;
+    max-width: 768px;
+  }
+}
+
+.milk-img {
+  margin-right: 30px;
+}
+
+.milk-text {
+  position: absolute;
+  bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 1280px) {
+    bottom: 55px;
+    max-width: 1280px;
+  }
+}
+
+.hero-text {
+  width: 114px;
+  margin-bottom: 20px;
+  font-style: 400;
+  font-size: 8px;
+  line-height: 1.5;
+  text-transform: uppercase;
+
+  color: $white-color;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 200px;
+    font-size: 14px;
+    line-height: 1.42;
+    max-width: 1280px;
+  }
+}
+
+.button-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  fill: $main-color;
+  background-color: $white-color;
+  &:hover,
+  &:focus {
+    background-color: $hover-btn;
+  }
+}
+
+.circle {
+  position: absolute;
+  height: 345px;
+  width: 345px;
+  border-radius: 50%;
+  border: none;
+
+  top: 45px;
+  left: 36px;
+
+  background-color: $second-color;
+  @media screen and (min-width: 320px) {
+    max-width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    height: 325px;
+    width: 325px;
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1280px) {
+    height: 538px;
+    width: 538px;
+    max-width: 1280px;
+  }
+}
+
+.hero-icecream {
+  position: absolute;
+  bottom: 0;
+  top: 92px;
+  right: 30px;
+  @media screen and (min-width: 320px) {
+    max-width: 480px;
+  }
+  @media screen and (max-width: 767px) {
+    // z-index: 1;
+  }
+  @media screen and (min-width: 768px) {
+    right: 275px;
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1280px) {
+    right: 450px;
+    max-width: 1280px;
+  }
+}
+
 .titel-box {
-  position: relative;
+  position: absolute;
+  z-index: 1;
   width: 218px;
   top: 190px;
 
@@ -186,7 +312,6 @@
   border: none;
   background-color: $main-color;
 
-  font-family: DM Sans, sans-serif;
   font-style: 400;
   font-size: 8px;
   line-height: 1.25;
@@ -219,7 +344,6 @@
   border: none;
   background-color: $white-color;
 
-  font-family: DM Sans, sans-serif;
   font-style: 400;
   font-size: 8px;
   line-height: 1.25;
@@ -245,124 +369,10 @@
   }
 }
 
-.milk-box {
-  position: absolute;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  bottom: 45px;
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-  @media screen and (min-width: 768px) {
-    bottom: 30px;
-    max-width: 768px;
-  }
-}
-
-.milk-img {
-  margin-right: 30px;
-}
-
-.milk-text {
-  position: absolute;
-  bottom: 35px;
-  display: flex;
-  flex-direction: column;
-  @media screen and (min-width: 1280px) {
-    bottom: 55px;
-    max-width: 1280px;
-  }
-}
-
-.hero-text {
-  width: 114px;
-  margin-bottom: 20px;
-  font-family: DM Sans, sans-serif;
-  font-style: 400;
-  font-size: 8px;
-  line-height: 1.5;
-  text-transform: uppercase;
-
-  color: $white-color;
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-  }
-  @media screen and (min-width: 1280px) {
-    width: 200px;
-    font-size: 14px;
-    line-height: 1.42;
-    max-width: 1280px;
-  }
-}
-
-.button-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 26px;
-  height: 26px;
-  padding: 0;
-  border-radius: 50%;
-  border: none;
-  fill: $main-color;
-  background-color: $white-color;
-  &:hover,
-  &:focus {
-    background-color: $hover-btn;
-  }
-}
-
-.circle {
-  height: 345px;
-  width: 345px;
-  margin-left: 15px;
-  border-radius: 50%;
-  border: none;
-
-  background-color: $second-color;
-  @media screen and (min-width: 320px) {
-    overflow: hidden;
-    max-width: 480px;
-  }
-  @media screen and (min-width: 768px) {
-    height: 325px;
-    width: 325px;
-    margin-left: 275px;
-    max-width: 768px;
-  }
-  @media screen and (min-width: 1280px) {
-    height: 538px;
-    width: 538px;
-    margin-left: 360px;
-    max-width: 1280px;
-  }
-}
-
-.hero-icecream {
-  position: absolute;
-  bottom: 0;
-  right: 30px;
-  @media screen and (min-width: 320px) {
-    max-width: 480px;
-  }
-  @media screen and (min-width: 768px) {
-    right: 275px;
-    max-width: 768px;
-  }
-  @media screen and (min-width: 1280px) {
-    right: 450px;
-    max-width: 1280px;
-  }
-}
-
 .hero-girl {
   position: absolute;
   bottom: 0;
-  right: 35px;
+  right: 34px;
   @media screen and (max-width: 767px) {
     display: none;
   }
