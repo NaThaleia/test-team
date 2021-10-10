@@ -75,19 +75,20 @@
     }
 }
 
+
+
 .customer-reviews__text {
     display: block;  
     width: 180px;
     height: 260px;
 
-    padding: 15px 16px 6px 7px;
+    padding: 15px 15px 6px 7px;
     font-size: 12px;
     line-height: calc(31 / 12);
     text-align: center;
     letter-spacing: 0.04em;
-    text-decoration: underline; // временный декоративчик
-    // text-decoration: repeating-linear-gradients (90deg, red, red);
-
+    background-image: repeating-linear-gradient($backcolor, $backcolor 40px, $lines 40px, $lines 41px, $backcolor 41px, $backcolor 71px, $lines 71px, $lines 72px, $backcolor 72px, $backcolor 102px, $lines 102px, $lines 103px, $backcolor 103px, $backcolor 133px, $lines 133px, $lines 134px, $backcolor 134px, $backcolor 164px, $lines 164px, $lines 165px, $backcolor 165px, $backcolor 195px, $lines 195px, $lines 196px, $backcolor 196px, $backcolor 226px, $lines 226px, $lines 227px, $backcolor 227px, $backcolor 254px, $lines 254px, $lines 255px);
+    
     position: relative;
     z-index: 2;
 
@@ -113,6 +114,8 @@
 
         font-size: 14px;
         line-height: calc(30 / 14);
+
+        background-image: repeating-linear-gradient($backcolor, $backcolor 43px, $lines 43px, $lines 44px, $backcolor 44px, $backcolor 74px, $lines 74px, $lines 75px, $backcolor 75px, $backcolor 102px, $lines 102px, $lines 103px);
     }
     
     @media screen and (min-width: 1280px) {
@@ -123,6 +126,8 @@
 
         font-size: 16px;
         line-height: calc(30 / 16);
+
+        background-image: repeating-linear-gradient($backcolor, $backcolor 43px, $lines 43px, $lines 44px, $backcolor 44px, $backcolor 74px, $lines 74px, $lines 75px);
     }
 }
 
