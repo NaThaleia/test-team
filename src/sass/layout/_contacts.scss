@@ -409,6 +409,7 @@
   border-radius: 22px;
   color: $main-color;
   background-color: $white-color;
+  cursor: pointer;
 
   @media screen and (max-width: 767px) {
     margin: 0 auto;
