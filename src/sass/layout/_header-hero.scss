@@ -17,6 +17,7 @@
   margin: 0 auto;
   padding-top: 47px;
   padding-bottom: 45px;
+  z-index: 1;
   @media screen and (max-width: 767px) {
     padding-top: 25px;
     padding-bottom: 15px;
@@ -108,13 +109,9 @@
   }
 }
 
-.icon-burger-open {
-  fill: black;
-}
-
 // ------------------HERO----------------------- //
 .hero {
-  min-height: 665px;
+  height: 665px;
   position: relative;
   display: flex;
   width: 100%;
@@ -131,12 +128,12 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  bottom: 45px;
+  margin-bottom: 45px;
   @media screen and (max-width: 767px) {
     display: none;
   }
   @media screen and (min-width: 768px) {
-    bottom: 30px;
+    margin-bottom: 30px;
     max-width: 768px;
   }
 }
@@ -147,11 +144,11 @@
 
 .milk-text {
   position: absolute;
-  bottom: 35px;
+  margin-bottom: 35px;
   display: flex;
   flex-direction: column;
   @media screen and (min-width: 1280px) {
-    bottom: 55px;
+    margin-bottom: 55px;
     max-width: 1280px;
   }
 }
@@ -209,17 +206,21 @@
   background-color: $second-color;
   @media screen and (min-width: 320px) {
     max-width: 480px;
+    top: 83px;
+    left: 36px;
+    height: 346px;
+    width: 344px;
   }
   @media screen and (min-width: 768px) {
-    top: -50px;
-    left: 190px;
-    height: 325px;
-    width: 325px;
+    top: 31px;
+    left: 307px;
+    height: 324px;
+    width: 322px;
     max-width: 768px;
   }
   @media screen and (min-width: 1280px) {
-    top: 0px;
-    left: 360px;
+    top: 52px;
+    left: 475px;
     height: 538px;
     width: 538px;
     max-width: 1280px;
