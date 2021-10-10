@@ -2,8 +2,7 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
-
-// Стили для файла с примером HTML-фрагмента
+@import './utils/mixins';
 @import './utils/variables';
 @import './utils/cubic';
 @import './base/body';
@@ -20,3 +19,4 @@
 @import './layout/mobile-menu';
 @import './layout/form-modal';
 @import './layout/advantages';
+@import './components/_buttons';
