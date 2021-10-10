@@ -1078,15 +1078,8 @@ h6 {
   margin-top: 3px;
 }
 
-.advantages-list__number {
-  font-family: Titan One;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 41px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #d41443;
+.advantages-section {
+  padding-bottom: 97px;
 }
 
 .advantages-list__text {
@@ -1096,18 +1089,27 @@ h6 {
   color: #000000;
 }
 
+.advantages-list__number {
+  font-family: Titan One;
+  font-size: 36px;
+  line-height: 41px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+  margin-bottom: 16px;
+}
+
+.advantages__icon {
+  margin-bottom: 16px;
+}
+
 .advantages-list {
+  margin-bottom: 38px;
   position: relative;
 }
 
-.advantages-list__item::before {
-  top: 0;
-  left: 0;
-  content: '';
-  display: block;
-  background-position: center;
-  background-size: cover;
-  position: absolute;
+.advantages-list:last-child {
+  margin-bottom: 0;
 }
 
 .gallery-section {
