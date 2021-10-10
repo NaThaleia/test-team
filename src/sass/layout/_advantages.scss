@@ -1,5 +1,11 @@
 .advantages-section {
   padding-bottom: 97px;
+  background-color: $bg-color;
+}
+.advantages-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .advantages-list__text {
@@ -7,6 +13,16 @@
   font-size: 12px;
   line-height: 170%;
   color: #000000;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 174%;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 0.02em;
+  }
 }
 .advantages-list__number {
   font-family: Titan One;
@@ -24,11 +40,24 @@
 
 .advantages-list__item {
   margin-bottom: 38px;
-  position: relative;
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 60px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
+
 // .advantages-list__item::before {
 //   top: 0;
 //   left: 0;
