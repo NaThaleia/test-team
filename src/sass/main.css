@@ -1103,12 +1103,12 @@ h6 {
   margin-bottom: 16px;
 }
 
-.advantages-list {
+.advantages-list__item {
   margin-bottom: 38px;
   position: relative;
 }
 
-.advantages-list:last-child {
+.advantages-list__item:last-child {
   margin-bottom: 0;
 }
 
