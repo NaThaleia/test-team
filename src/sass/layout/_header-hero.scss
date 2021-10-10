@@ -79,6 +79,7 @@
   margin-top: 19px;
   margin-right: 20px;
   @media screen and (min-width: 768px) {
+    margin-top: 0;
     margin-right: 30px;
   }
   @media screen and (min-width: 1280px) {
@@ -128,6 +129,9 @@
 .hero .container {
   position: relative;
   width: 320px;
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
 }
 
 .milk-box {
@@ -135,25 +139,24 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 45px;
   @media screen and (max-width: 767px) {
     display: none;
   }
   @media screen and (min-width: 768px) {
-    margin-bottom: 30px;
+    bottom: 28px;
     max-width: 768px;
   }
 }
 
-.milk-img {
-  margin-right: 30px;
-}
-
 .milk-text {
   position: absolute;
-  margin-bottom: 35px;
   display: flex;
   flex-direction: column;
+  left: 154px;
+  bottom: 34px;
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
   @media screen and (min-width: 1280px) {
     margin-bottom: 55px;
     max-width: 1280px;
@@ -162,11 +165,10 @@
 
 .hero-text {
   width: 114px;
-  margin-bottom: 20px;
-  font-style: 400;
+  margin-bottom: 7px;
   font-size: 8px;
   line-height: 1.5;
-  text-transform: uppercase;
+  text-transform: unset;
 
   color: $white-color;
   @media screen and (max-width: 767px) {
@@ -223,7 +225,7 @@
   }
   @media screen and (min-width: 768px) {
     top: 31px;
-    left: 307px;
+    left: 310px;
     height: 324px;
     width: 322px;
     max-width: 768px;
@@ -245,9 +247,6 @@
   @media screen and (min-width: 320px) {
     max-width: 480px;
   }
-  @media screen and (max-width: 767px) {
-    // z-index: 1;
-  }
   @media screen and (min-width: 768px) {
     right: 275px;
     max-width: 768px;
@@ -268,7 +267,7 @@
     max-width: 480px;
   }
   @media screen and (min-width: 768px) {
-    top: 10px;
+    top: 102px;
     width: 162px;
     max-width: 768px;
   }
@@ -284,7 +283,7 @@
   font-size: 48px;
   line-height: 0.95;
   letter-spacing: 4%;
-  text-transform: uppercase;
+  text-transform: unset;
   margin-bottom: 19px;
 
   color: $main-color;
