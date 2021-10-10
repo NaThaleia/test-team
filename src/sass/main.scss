@@ -5,6 +5,7 @@
 
 // Стили для файла с примером HTML-фрагмента
 @import './utils/variables';
+@import './utils/cubic';
 @import './base/body';
 @import './base/reset';
 @import './components/container';
@@ -17,3 +18,6 @@
 @import './layout/footer';
 @import './layout/products';
 @import './layout/map-modal';
+@import './layout/mobile-menu';
+@import './layout/form-modal';
+@import './layout/advantages';

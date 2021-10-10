@@ -1,6 +1,5 @@
 .gallery-section {
 margin-left: 0px;
-margin-bottom: 30px;
 background-image: linear-gradient(to bottom, #fff5f6 50%, #ffffff 50%);
 width: 100vw;
 height: 122px;
@@ -13,32 +12,122 @@ position: relative;
 @media screen and (min-width: 768px) {
   max-width: 1200px;
   height: 264px;
-  margin-bottom: 50px;
+
 }
 
-@media screen and (min-width: 1200px) {
-  max-width: 1280px;
+@media screen and (min-width: 1280px) {
+  max-width: 100vw;
   height: 430px;
 
 } 
 }
-.gallery-thumb__image {
- width: 100vw;   
-position: absolute;
-transform: translateY(10%);
-left: 0;
-top: 0;
+.gallery-thumb {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  @media screen and (min-width: 1200px) {
+  justify-content: center;
+  }
+}
 
- @media screen and (min-width: 480px) {
-   max-width: 768px;
-   transform: translate(15%, 10%);
+.gallery-thumb__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+
+&:first-child {
+   justify-content: start;
+   padding-top: 45px;
+    @media screen and (min-width: 768px) {
+      padding-top: 70px;
+    }
+    @media screen and (min-width: 1280px) {
+       padding-top: 120px;
+
+    }
 }
-@media screen and (min-width: 768px) {
-    max-width: 768px;
-    transform: translateY(10%);
+&:nth-child(2n) {
+  justify-content: start;
+  padding-top: 30px;
 }
-@media screen and (min-width: 1200px) {
-  max-width: 1280px;
-  margin: 0 auto;
+&:nth-child(3n) {
+  align-items: flex-start;
+  
+}
+&:nth-child(4n) {
+  justify-content: start;
+  padding-top: 40px;
+}
+
+&:nth-child(5n) {
+  justify-content: start;
+  padding-top: 30px;
+}
+
+&:last-child {
+  justify-content: start;
+  padding-top: 40px;
+  margin-right: 0px;
+   @media screen and (min-width: 768px) {
+     padding-top: 100px;
 }
 }
+}
+
+.gallery-thumb__item {
+  display: flex;
+  margin-bottom: 8px;
+}
+.gallery-thumb__item--small {
+  display: flex;
+  width: 50%;
+ 
+}
+// .gallery-section {
+//   margin-left: 0px;
+//   margin-bottom: 30px;
+//   background-image: linear-gradient(to bottom, #fff5f6 50%, #ffffff 50%);
+//   width: 100vw;
+//   height: 122px;
+//   position: relative;
+
+//   @media screen and (min-width: 320px) {
+//     max-width: 768px;
+//   }
+
+//   @media screen and (min-width: 768px) {
+//     max-width: 1200px;
+//     height: 264px;
+//     // margin-bottom: 50px;
+//   }
+
+//   @media screen and (min-width: 1200px) {
+//     max-width: 100vw;
+//     height: 430px;
+
+//   }
+// }
+// .gallery-thumb__image {
+//  width: 100vw;   
+// position: absolute;
+// transform: translateY(10%);
+// left: 0;
+// top: 0;
+
+//  @media screen and (min-width: 480px) {
+//    max-width: 768px;
+//    transform: translate(15%, 10%);
+// }
+// @media screen and (min-width: 768px) {
+//     max-width: 768px;
+//     transform: translateY(10%);
+// }
+// @media screen and (min-width: 1200px) {
+//   max-width: 1280px;
+//   margin: 0 auto;
+// }
+// }
