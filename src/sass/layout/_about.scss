@@ -1,24 +1,23 @@
 .about {
   background-color: $bg-color;
   padding-top: 125px;
-  padding-bottom: 40px;
+  padding-bottom: 60px;
 }
 
 .about-background {
   margin-left: auto;
   margin-right: auto;
-  background-position: bottom;
   background-size: 100%;
   background-repeat: no-repeat;
 
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 767px) {
     background-image: url(../images/about/about-bg-mobile1x.png);
     background-position-y: 88%;
   }
 
   @media screen and (min-width: 1280px) {
     background-image: url(../images/about/about-bg-desc1x.png);
-    background-position: bottom;
+    background-position-y: 270px;
   }
 }
 
