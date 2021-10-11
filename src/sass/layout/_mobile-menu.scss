@@ -40,13 +40,6 @@
     cursor: pointer;
   }
 }
-.header-button_right.button-submit_mob {
-  width: 186px;
-  margin: 0 auto 19px;
-  @media screen and (max-width: 767px) {
-    display: initial;
-  }
-}
 .mobile-menu {
   font-weight: 700;
   font-size: 14px;
