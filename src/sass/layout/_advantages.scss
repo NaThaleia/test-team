@@ -42,7 +42,7 @@
   letter-spacing: 0.04em;
   color: $main-color;
   margin-bottom: 16px;
-  @media screen and (man-width: 767px) {
+  @media screen and (min-width: 767px) {
     text-transform: uppercase;
   }
   @media screen and (min-width: 768px) {
