@@ -13,17 +13,6 @@
   }
 }
 
-.customer-reviews__list {
-  padding-bottom: 30px;
-
-  @media screen and (min-width: 768px) {
-    padding-bottom: 35px;
-  }
-
-  @media screen and (min-width: 1280px) {
-  }
-}
-
 .customer-reviews__item {
   display: flex;
   flex-direction: column;
@@ -210,7 +199,64 @@
   background-color: $dots;
   border-radius: 50%;
 
+  cursor: pointer;
+
   &:not(:last-child) {
     margin-right: 18px;
   }
+}
+
+
+/* переменные для слайдера */
+
+.customer-reviews__slider {
+  position: relative;
+
+  padding-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 35px;
+  }
+
+  @media screen and (min-width: 1280px) {
+  }
+}
+
+.slide {
+  display: none;
+}
+
+.active {
+  display: flex;
+}
+
+.activedot {
+  display: block;
+  width: 12.5px;
+  background-color: unset;
+  border-radius: unset;
+  background-image: url(../images/customers/home.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.customer-reviews__btn {
+  width: 50px;
+  height: 100%;
+
+  cursor: pointer;
+
+  position: absolute;
+  top: 0;  
+  
+  background-color: rgba(211, 19, 66, 0.1);;
+}
+
+.customer-reviews__btn--prev {
+  left: 0;
+}
+
+.customer-reviews__btn--next {
+  right: 0;
 }
