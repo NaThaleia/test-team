@@ -204,10 +204,17 @@
   &:not(:last-child) {
     margin-right: 18px;
   }
+
+  transition: $cubic;
+  
+  &:focus,
+  &:hover {
+    transform: scale(1.5,1.5);
+  }
 }
 
 
-/* переменные для слайдера */
+/* классы для слайдера */
 
 .customer-reviews__slider {
   position: relative;
@@ -242,7 +249,7 @@
 }
 
 .customer-reviews__btn {
-  width: 50px;
+  width: 50%;
   height: 100%;
 
   cursor: pointer;
@@ -250,7 +257,13 @@
   position: absolute;
   top: 0;  
   
-  background-color: rgba(211, 19, 66, 0.1);;
+  // background-color: rgba(211, 19, 66, 0.1);
+  // transition: $cubic;
+
+  // &:focus,
+  // &:hover {
+  //   transform: scale(1.5,1.5);
+  // }
 }
 
 .customer-reviews__btn--prev {
