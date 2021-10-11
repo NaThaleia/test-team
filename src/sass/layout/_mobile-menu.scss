@@ -33,6 +33,7 @@
   width: 14px;
   height: 14px;
   fill: $white-color;
+  transition: fill $cubic;
   &:hover,
   &:focus {
     fill: $main-color;
@@ -61,6 +62,7 @@
     height: 100%;
     width: 100%;
     color: $white-color;
+    transition: color $cubic;
     &:hover,
     &:focus {
       color: $main-color;
@@ -69,6 +71,7 @@
   &__icon {
     width: 40px;
     height: 40px;
+    transition: fill $cubic;
     &:hover,
     &:focus {
       fill: $main-color;
