@@ -11,9 +11,9 @@
   background-size: contain;
   background-repeat: no-repeat;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 479px) {
     background-image: url(../images/about/about-bg-mobile1x.png);
-    background-position-y: 90%;
+    background-position-y: 88%;
   }
 
   @media screen and (min-width: 1280px) {
@@ -67,28 +67,33 @@
 }
 
 .about-content {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: space-between;
-  }
-}
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../images/cow/cow-mobile1x.png);
+  background-position: top;
+  padding-top: 400px;
 
-.about-foto {
-  margin-top: 25px;
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/cow/cow-tablet1x.png);
+    background-position: top left;
+    padding-left: 360px;
+    padding-top: 0px;
+    background-size: auto;
+  }
 
   @media screen and (min-width: 1280px) {
-    margin-top: 55px;
+    background-image: url(../images/cow/cow-desc1x.png);
+    padding-left: 580px;
+    padding-top: 1px;
   }
 }
 
 .about-right-info {
-  margin-top: 46px;
   @media screen and (min-width: 768px) {
     margin-top: 50px;
     max-width: 340px;
   }
   @media screen and (min-width: 1280px) {
-    margin-top: 105px;
     max-width: 465px;
   }
 }
