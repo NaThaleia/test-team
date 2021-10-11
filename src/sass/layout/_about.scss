@@ -75,6 +75,7 @@
   background-image: url(../images/cow/cow-mobile1x.png);
   background-position: top;
   padding-top: 400px;
+  margin-bottom: 40px;
 
   @media screen and (min-width: 768px) {
     background-image: url(../images/cow/cow-tablet1x.png);
@@ -82,6 +83,7 @@
     padding-left: 360px;
     padding-top: 0px;
     background-size: auto;
+    margin-bottom: 66px;
   }
 
   @media screen and (min-width: 1280px) {
