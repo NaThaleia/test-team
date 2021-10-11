@@ -38,14 +38,14 @@
 .mobile-menu__close-icon {
   width: 18px;
   height: 18px;
-  fill: $main-color;
+  fill: $white-color;
   &:hover,
   &:focus {
     fill: $main-color;
     cursor: pointer;
   }
 }
-.bs-mob {
+.button-submit_mob {
   margin-bottom: 32px;
 }
 .mobile-menu {
@@ -57,6 +57,10 @@
   }
   &__link {
     color: $white-color;
+    &:hover,
+    &:focus {
+      color: $main-color;
+    }
   }
   &__icon {
     width: 40px;
