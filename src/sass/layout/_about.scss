@@ -12,7 +12,7 @@
 
   @media screen and (max-width: 767px) {
     background-image: url(../images/about/about-bg-mobile1x.png);
-    background-position-y: 88%;
+    background-position-y: 50%;
   }
 
   @media screen and (min-width: 1280px) {
@@ -84,6 +84,7 @@
     background-image: url(../images/cow/cow-desc1x.png);
     padding-left: 580px;
     padding-top: 1px;
+    margin-bottom: 100px;
   }
 }
 
