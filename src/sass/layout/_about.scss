@@ -1,7 +1,11 @@
 .about {
   background-color: $bg-color;
   padding-top: 125px;
-  padding-bottom: 60px;
+  padding-bottom: 140px;
+
+  @media screen and (max-width: 767px) {
+    padding-bottom: 95px;
+  }
 }
 
 .about-background {
