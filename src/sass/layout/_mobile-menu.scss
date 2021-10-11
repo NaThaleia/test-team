@@ -9,7 +9,7 @@
   flex-direction: column;
   background-color: #e17992;
   z-index: 99;
-  // transform: translateX(100%);
+  transform: translateX(100%);
   transition: transform $cubic;
   @media screen and (min-width: 768px) {
     padding: 60px 0;
