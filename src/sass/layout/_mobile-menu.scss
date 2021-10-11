@@ -1,5 +1,5 @@
 .menu-container {
-  padding: 60px 21px;
+  padding: 60px 0;
   position: fixed;
   top: 0;
   right: 0;
@@ -12,7 +12,7 @@
   // transform: translateX(100%);
   transition: transform $cubic;
   @media screen and (min-width: 768px) {
-    padding: 60px 24px;
+    padding: 60px 0;
   }
 }
 .menu-container.is-open {
@@ -39,9 +39,9 @@
     cursor: pointer;
   }
 }
-.button-submit.button-submit_mob {
+.header-button_right.button-submit_mob {
   width: 186px;
-  margin: 0 auto 32px;
+  margin: 0 auto 19px;
   @media screen and (max-width: 767px) {
     display: initial;
   }
@@ -51,15 +51,15 @@
   font-size: 14px;
   line-height: 1.3;
   &__item {
+    border-top: 1px solid #e18298;
     padding: 11px 24px 13px;
-  }
-  &__item:last-child {
-    border-bottom: 1px solid #e18298;
+    &:last-child {
+      border-bottom: 1px solid #e18298;
+    }
   }
   &__link {
     height: 100%;
     width: 100%;
-    border-top: 1px solid #e18298;
     color: $white-color;
     &:hover,
     &:focus {
