@@ -83,9 +83,13 @@ position: relative;
   margin-bottom: 3px;
   transition: $cubic;
   cursor: pointer;
-  &:focus, 
-  &:hover{
-transform: scale(1.5,1.5);
+  &:focus,
+  &:hover {
+    transform: scale(2.5, 2.5) translate(20%,20%);
+
+    @media screen and (min-width: 768px) {
+      transform: scale(1.5, 1.5) translate(20%, 20%);
+    }
   }
 }
 .gallery-thumb__item--small {
@@ -95,9 +99,26 @@ transform: scale(1.5,1.5);
   transition: $cubic;
   &:focus,
   &:hover {
-    transform: scale(1.5,1.5);
+   transform:scale(2.5,2.5) translate(20%,20%);
+  
+  @media screen and (min-width: 768px) {
+    transform:scale(1.5, 1.5) translate(20%, 20%);
   }
- 
+}
+}
+.gallery-thumb__item--last{
+display: flex;
+cursor: pointer;
+transition: $cubic;
+
+&:focus,
+&:hover {
+  transform: scale(2.5, 2.5) translate(-40%, 20%);
+
+  @media screen and (min-width: 768px) {
+    transform: scale(1.5, 1.5) translate(-40%, 20%);
+  }
+}
 }
 .gallery-thumb__image {
   border: none;
