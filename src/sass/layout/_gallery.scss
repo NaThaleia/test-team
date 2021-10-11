@@ -82,18 +82,20 @@ position: relative;
   display: flex;
   margin-bottom: 3px;
   transition: $cubic;
+  cursor: pointer;
   &:focus, 
   &:hover{
-transform: scale(2,2);
+transform: scale(1.5,1.5);
   }
 }
 .gallery-thumb__item--small {
   display: flex;
   width: 50%;
+  cursor: pointer;
   transition: $cubic;
   &:focus,
   &:hover {
-    transform: scale(2, 2);
+    transform: scale(1.5,1.5);
   }
  
 }
