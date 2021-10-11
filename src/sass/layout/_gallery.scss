@@ -1,7 +1,7 @@
 .gallery-section {
 margin-left: 0px;
 background-image: linear-gradient(to bottom, #fff5f6 50%, #ffffff 50%);
-width: 100vw;
+max-width: 100%;
 height: 122px;
 position: relative;
 
@@ -16,7 +16,7 @@ position: relative;
 }
 
 @media screen and (min-width: 1280px) {
-  max-width: 100vw;
+  max-width: 100%;
   height: 430px;
 
 } 
