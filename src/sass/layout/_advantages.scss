@@ -40,9 +40,11 @@
   font-size: 36px;
   line-height: 1.14;
   letter-spacing: 0.04em;
-  text-transform: uppercase;
   color: $main-color;
   margin-bottom: 16px;
+  @media screen and (man-width: 767px) {
+    text-transform: uppercase;
+  }
   @media screen and (min-width: 768px) {
     font-size: 48px;
   }
