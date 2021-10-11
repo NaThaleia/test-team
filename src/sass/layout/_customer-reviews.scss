@@ -147,12 +147,13 @@
   &::before {
     content: '';
     display: block;
+
     width: 32px;
     height: 4px;
+
     background-image: url(../images/customers/dots-x1.png);
 
     position: absolute;
-
     transform-origin: center;
 
     top: -18px;
@@ -184,20 +185,12 @@
   align-items: center;
 }
 
-.customer-reviews__dot--icon {
-  display: block;
-  margin-right: 18px;
-}
-
-.customer-reviews__icon {
-  display: block;
-  fill: #d31342;
-}
-
 .customer-reviews__dot {
   display: block;
+
   width: 12px;
   height: 12px;
+
   background-color: $dots;
   border-radius: 50%;
 
@@ -241,9 +234,12 @@
 
 .activedot {
   display: block;
+
   width: 12.5px;
+
   background-color: unset;
   border-radius: unset;
+  
   background-image: url(../images/customers/home.svg);
   background-repeat: no-repeat;
   background-position: center;
