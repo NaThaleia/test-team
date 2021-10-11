@@ -132,33 +132,3 @@
     margin-bottom: 45px;
   }
 }
-
-.about-btn {
-  font-weight: 900;
-  font-size: 16px;
-  line-height: 1.31;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 175px;
-  height: 45px;
-  color: $main-color;
-  border: none;
-  background-color: $white-color;
-  border-radius: 22px;
-  cursor: pointer;
-
-  &:hover,
-  &:focus {
-    background-color: $hover-btn;
-  }
-
-  @media screen and (max-width: 767px) {
-    margin: auto;
-  }
-}
-
-.btn-arow {
-  margin-left: 14px;
-  margin-top: 3px;
-}
