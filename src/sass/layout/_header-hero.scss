@@ -92,6 +92,7 @@
     display: none;
   }
 }
+
 .button-submit {
   width: 160px;
   height: 45px;
@@ -99,6 +100,7 @@
   border-radius: 22px;
   border: none;
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
   background-color: $white-color;
 
   font-weight: 700;
@@ -106,7 +108,7 @@
   line-height: 1.31;
 
   color: $main-color;
-  transition: color $cubic;
+  transition: background-color $cubic;
   &:hover,
   &:focus {
     background-color: $hover-btn;
@@ -211,6 +213,7 @@
   border-radius: 50%;
   border: none;
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
   fill: $main-color;
   background-color: $white-color;
   transition: background-color $cubic;
@@ -354,6 +357,7 @@
   border-radius: 22px;
   border: none;
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
   background-color: $main-color;
 
   font-weight: 400;
@@ -387,6 +391,7 @@
   border-radius: 22px;
   border: none;
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
   background-color: $white-color;
 
   font-weight: 400;
