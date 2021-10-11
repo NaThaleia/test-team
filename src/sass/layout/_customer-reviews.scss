@@ -21,6 +21,7 @@
 
 .customer-reviews__img {
   display: block;
+
   width: 85px;
   height: 85px;
 
@@ -40,12 +41,23 @@
   justify-content: center;
   align-items: center;
   
-  width: 280px;
-  height: 308px;
+  width: 100%; // эксперемент
+  padding-top: 40px; // эксперемент
+  padding-bottom: 20px; // эксперемент
+
+  // width: 280px; // значения по макету
+  // height: 308px; // значения по макету
 
   margin-bottom: 52px;
 
   background-color: $backcolor;
+
+  @media screen and (min-width: 480px) {
+    width: 440px; // эксперемент
+    height: 184px; // эксперемент
+    padding-top: unset; // эксперемент
+    padding-bottom: unset; // эксперемент
+  }
 
   @media screen and (min-width: 768px) {
     width: 620px;
@@ -67,10 +79,16 @@
   justify-content: center;
   align-items: center;
 
-  width: 180px;
-  height: 240px;
+  width: 70%; // эксперемент
+  
+  // width: 180px; // значения по макету
+  // height: 240px; // значения по макету
 
   background-image: repeating-linear-gradient($backcolor, $backcolor 29px, $lines 29px, $lines 30px);
+
+  @media screen and (min-width: 480px) {
+    
+  }
 
   @media screen and (min-width: 768px) {
     width: 550px;
@@ -86,8 +104,10 @@
 .customer-reviews__text {
   display: block;
   
-  width: 160px;
-  height: 240px;
+  width: 90%; // эксперемент
+
+  // width: 160px; // значения по макету
+  // height: 240px; // значения по макету
 
   font-size: 12px;
   line-height: calc(31 / 12);
@@ -119,6 +139,10 @@
     }
   }
 
+  @media screen and (min-width: 480px) {
+    
+  }
+
   @media screen and (min-width: 768px) {
     width: 480px;
     height: 90px;
@@ -136,7 +160,7 @@
   }
 }
 
-.customer-reviews__titl {
+.customer-reviews__title {
   display: block;
   font-size: 14px;
   line-height: calc(26 / 14);
@@ -147,12 +171,13 @@
   &::before {
     content: '';
     display: block;
+
     width: 32px;
     height: 4px;
+
     background-image: url(../images/customers/dots-x1.png);
 
     position: absolute;
-
     transform-origin: center;
 
     top: -18px;
@@ -184,20 +209,12 @@
   align-items: center;
 }
 
-.customer-reviews__dot--icon {
-  display: block;
-  margin-right: 18px;
-}
-
-.customer-reviews__icon {
-  display: block;
-  fill: #d31342;
-}
-
 .customer-reviews__dot {
   display: block;
+
   width: 12px;
   height: 12px;
+
   background-color: $dots;
   border-radius: 50%;
 
@@ -207,7 +224,7 @@
     margin-right: 18px;
   }
 
-  transition: $cubic;
+  // transition: $cubic;
   
   &:focus,
   &:hover {
@@ -241,9 +258,12 @@
 
 .activedot {
   display: block;
+
   width: 12.5px;
+
   background-color: unset;
   border-radius: unset;
+  
   background-image: url(../images/customers/home.svg);
   background-repeat: no-repeat;
   background-position: center;
