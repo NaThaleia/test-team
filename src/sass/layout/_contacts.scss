@@ -1,21 +1,25 @@
 .section--contacts {
-  background-color: $bg-color;
+  //background-color: $bg-color;
+  background: linear-gradient(to top, #fff5f6 92%, #ffffff 0%);
 
   @media screen and (max-width: 767px) {
     padding-top: 0;
-    padding-bottom: 29px;
+    padding-bottom: 113px;
+    //background: linear-gradient(to top, #fff5f6 93%, #ffffff 0%);
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-top: 0;
-    padding-bottom: 87px;
+    padding-bottom: 158px;
+    background: linear-gradient(to top, #fff5f6 86%, #ffffff 0%);
   }
 
   @media screen and (min-width: 1200px) {
     padding-top: 0;
-    padding-bottom: 63px;
-    background-image: url('../images/contacts/contacts-bg-desc1x.png');
-    background-repeat: no-repeat;
+    padding-bottom: 165px;
+    background: linear-gradient(to top, #fff5f6 88%, #ffffff 0%);
+    //background-image: url('../images/contacts/contacts-bg-desc1x.png');
+    //background-repeat: no-repeat;
     background-position: left top;
     background-size: 100%;
 
@@ -30,7 +34,7 @@
 }
 
 .contacts {
-  position: relative;
+  //position: relative;
   @media screen and (max-width: 767px) {
     bottom: 84px;
     padding-right: 30px;
@@ -127,11 +131,8 @@
   }
 }
 
-.contacts-addr__background {
-  display: inline-block;
-}
-
 .contacts-addr__title {
+  display: inline-block;
   text-align: center;
   background-color: $coffee;
   border-radius: 6px;
@@ -350,6 +351,7 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 160px;
+    padding-bottom: 113px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -358,6 +360,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 81px;
+    padding-bottom: 158px;
   }
 
   @media screen and (min-width: 1200px) {
