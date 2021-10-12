@@ -91,11 +91,6 @@
 
   &:focus,
   &:hover {
-    background-color: #ffffff;
+    background-color: $white-color;
   }
-}
-
-.map {
-  width: 100%;
-  height: 100%;
 }
