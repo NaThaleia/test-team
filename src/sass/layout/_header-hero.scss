@@ -517,8 +517,6 @@
 
 .hero__list {
   display: flex;
-
-  
 }
 
 .hero__item {
@@ -533,59 +531,52 @@
 }
 
 .hero__link {
+  height: 24px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   border-radius: 22px;
   border: none;
 
   cursor: pointer;
+
   box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
   transition: background-color $cubic;
   
   font-weight: 400;
   font-size: 8px;
   line-height: 1.25;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.28;
+  }
+
 }
 
 .hero__link--products {
-  width: 62.4px;
-  height: 24px;
-  
+  width: 63px;
+
+  color: $white-color;  
   background-color: $main-color;
 
-  color: $white-color;
   &:hover,
   &:focus {
     background-color: $hover-btnred;
   }
 
-
-
-
-
-
-
-  
-
-  
-  
-  @media screen and (min-width: 320px) {
-    max-width: 480px;
-  }
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-  }
   @media screen and (min-width: 1280px) {
     width: 105px;
     height: 40px;
-    font-size: 14px;
-    line-height: 1.28;
-    max-width: 1280px;
   }
 }
 
 .hero__link--him {
-  width: 82.8px;
-  height: 24px;
-    
+  width: 83px;
+
+  color: $main-color;
   background-color: $white-color;
 
   &:hover,
@@ -593,39 +584,8 @@
     background-color: $hover-btn;
   }
 
-
-
-  // font-weight: 400;
-  // font-size: 8px;
-  // line-height: 1.25;
-
-  color: $main-color;
-
-  
-  @media screen and (min-width: 320px) {
-    max-width: 480px;
-  }
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-  }
   @media screen and (min-width: 1280px) {
     width: 140px;
     height: 40px;
-    font-size: 14px;
-    line-height: 1.28;
-    max-width: 1280px;
   }
-}
-
-
-@media screen and (min-width: 480px) {
-
-}
-
-@media screen and (min-width: 768px) {
-  
-}
-
-@media screen and (min-width: 1280px) {
-  
 }
