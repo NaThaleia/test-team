@@ -1,11 +1,7 @@
 .about {
   background-color: $bg-color;
   padding-top: 125px;
-  padding-bottom: 140px;
-
-  @media screen and (max-width: 767px) {
-    padding-bottom: 95px;
-  }
+  padding-bottom: 60px;
 }
 
 .about-background {
@@ -16,7 +12,7 @@
 
   @media screen and (max-width: 767px) {
     background-image: url(../images/about/about-bg-mobile1x.png);
-    background-position-y: 50%;
+    background-position-y: 88%;
   }
 
   @media screen and (min-width: 1280px) {
@@ -75,7 +71,6 @@
   background-image: url(../images/cow/cow-mobile1x.png);
   background-position: top;
   padding-top: 400px;
-  margin-bottom: 40px;
 
   @media screen and (min-width: 768px) {
     background-image: url(../images/cow/cow-tablet1x.png);
@@ -83,14 +78,12 @@
     padding-left: 360px;
     padding-top: 0px;
     background-size: auto;
-    margin-bottom: 66px;
   }
 
   @media screen and (min-width: 1280px) {
     background-image: url(../images/cow/cow-desc1x.png);
     padding-left: 580px;
     padding-top: 1px;
-    margin-bottom: 100px;
   }
 }
 
