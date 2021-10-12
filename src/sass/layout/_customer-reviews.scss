@@ -1,15 +1,15 @@
 .customer-reviews {
   padding-top: 80px;
-  padding-bottom: 160px;
+  padding-bottom: 43px;
 
   @media screen and (min-width: 768px) {
     padding-top: 120px;
-    padding-bottom: 190px;
+    padding-bottom: 60px;
   }
 
   @media screen and (min-width: 1280px) {
     padding-top: 120px;
-    padding-bottom: 230px;
+    padding-bottom: 66px;
   }
 }
 
@@ -40,7 +40,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   width: 100%; // эксперемент
   padding-top: 40px; // эксперемент
   padding-bottom: 20px; // эксперемент
@@ -80,14 +80,18 @@
   align-items: center;
 
   width: 70%; // эксперемент
-  
+
   // width: 180px; // значения по макету
   // height: 240px; // значения по макету
 
-  background-image: repeating-linear-gradient($backcolor, $backcolor 29px, $lines 29px, $lines 30px);
+  background-image: repeating-linear-gradient(
+    $backcolor,
+    $backcolor 29px,
+    $lines 29px,
+    $lines 30px
+  );
 
   @media screen and (min-width: 480px) {
-    
   }
 
   @media screen and (min-width: 768px) {
@@ -103,7 +107,7 @@
 
 .customer-reviews__text {
   display: block;
-  
+
   width: 90%; // эксперемент
 
   // width: 160px; // значения по макету
@@ -135,12 +139,10 @@
     }
 
     @media screen and (min-width: 1280px) {
-      
     }
   }
 
   @media screen and (min-width: 480px) {
-    
   }
 
   @media screen and (min-width: 768px) {
@@ -225,13 +227,12 @@
   }
 
   // transition: $cubic;
-  
+
   &:focus,
   &:hover {
-    transform: scale(1.5,1.5);
+    transform: scale(1.5, 1.5);
   }
 }
-
 
 /* классы для слайдера */
 
@@ -263,7 +264,7 @@
 
   background-color: unset;
   border-radius: unset;
-  
+
   background-image: url(../images/customers/home.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -277,7 +278,7 @@
   cursor: pointer;
 
   position: absolute;
-  top: 0;  
+  top: 0;
 }
 
 .customer-reviews__btn--prev {
