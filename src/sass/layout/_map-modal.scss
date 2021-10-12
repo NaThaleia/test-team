@@ -8,12 +8,25 @@
   //   это для того, чтоб модальное окно проскролливалось
   overflow-y: scroll;
   z-index: 2;
+  opacity: 1;
   transition: opacity $cubic;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: opacity $cubic, visibility $cubic;
+}
+
+.backdrop.is-hidden .map-modal {
+  transform: translate(-50%, -50%) scale(1.2);
 }
 
 .map-modal {
   position: absolute;
-  padding: 25px 60px;
+  // padding: 25px 60px;
+  padding: 20px;
   background: linear-gradient(45deg, rgb(231, 159, 185), rgb(249, 249, 249));
   width: 300px;
   height: 400px;
@@ -26,10 +39,12 @@
 
   @media screen and (min-width: 768px) {
     width: 500px;
+    height: 425px;
   }
 
   @media screen and (min-width: 1280px) {
     width: 800px;
+    height: 475px;
   }
 }
 .map-modal-btn {
@@ -37,8 +52,8 @@
   position: absolute;
   width: 30px;
   height: 30px;
-  top: 10px;
-  right: 10px;
+  top: 5px;
+  right: 5px;
   cursor: pointer;
   display: flex;
   justify-content: center;
