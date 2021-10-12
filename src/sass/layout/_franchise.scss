@@ -25,10 +25,10 @@
 
 .franchise {
   position: absolute;
-  padding: 25px 60px;
+  padding: 25px 20px;
   background: linear-gradient(45deg, rgb(231, 159, 185), rgb(249, 249, 249));
   width: 300px;
-  height: 400px;
+  height: auto;
   border: 1px solid $main-color;
   border-radius: 10px;
   top: 50%;
@@ -56,21 +56,33 @@
 }
 
 .franchise__thumb {
-  display: flex;
+  position: relative;
 }
 
 .thumb__text {
-  padding: 20px;
+  padding: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: right;
 }
 
 .franchise__text {
-  font-size: 28px;
-  line-height: 2;
+  font-size: 15px;
+  line-height: 1.15;
   letter-spacing: 0.04;
+  color: #770b0b;
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 22px;
+  }
 }
 
 .franshise__button--center {
   text-align: center;
+  margin-top: 10px;
 }
 
 .frahchise-close {
@@ -78,8 +90,8 @@
   position: absolute;
   width: 30px;
   height: 30px;
-  top: 10px;
-  right: 10px;
+  top: 5px;
+  right: 5px;
   cursor: pointer;
   display: flex;
   justify-content: center;
