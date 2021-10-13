@@ -1,8 +1,5 @@
 .header {
   position: relative;
-  top: 0;
-  left: 0;
-  background: transparent;
   background-color: $ice-cream;
 }
 .header .container {
@@ -94,6 +91,10 @@
   @media screen and (min-width: 1280px) {
     display: none;
   }
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
 }
 
 .button-submit {
@@ -126,7 +127,6 @@
   height: 665px;
   position: relative;
   display: flex;
-  width: 100%;
   overflow: hidden;
   background-color: $ice-cream;
   height: 502px;
@@ -137,19 +137,9 @@
     height: 665px;
     justify-content: flex-end;
   }
-}
-
-.hero .container {
-  position: relative;
-
-  //по прозбам трудящихся, коменчу
-  // width: 320px;
-  // @media screen and (min-width: 768px) {
-  //   width: 768px;
-  // }
-  // @media screen and (min-width: 1280px) {
-  //   width: 1280px;
-  // }
+  & .container {
+    position: relative;
+  }
 }
 
 .milk-box {
@@ -282,74 +272,59 @@
   }
 }
 
-.titel-box {
+.title-box {
   position: absolute;
-  z-index: 3;
-  width: 218px;
   top: 193px;
-
-  @media screen and (min-width: 320px) {
-    max-width: 480px;
-  }
+  width: 218px;
+  z-index: 3;
   @media screen and (min-width: 768px) {
     top: 102px;
     width: 162px;
-    max-width: 768px;
   }
   @media screen and (min-width: 1280px) {
-    width: 280px;
-    max-width: 1280px;
+    top: 171px;
+    width: 272px;
   }
 }
 
-.hero-titel {
+.hero-title {
+  margin-bottom: 19px;
   font-family: Titan One, sans-serif;
   font-weight: 400;
   font-size: 48px;
-  line-height: 0.95;
-  letter-spacing: 4%;
-  text-transform: unset;
-  margin-bottom: 19px;
-
-  color: $main-color;
-  @media screen and (min-width: 320px) {
-    max-width: 480px;
-  }
-  @media screen and (min-width: 768px) {
-    font-size: 34px;
-    line-height: 0.91;
-    max-width: 768px;
-  }
-  @media screen and (min-width: 1280px) {
-    font-size: 58px;
-    line-height: 1.11;
-    max-width: 1280px;
-  }
-}
-
-.titel-first {
-  font-family: Titan One, sans-serif;
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 0.95;
+  line-height: 0.5;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  color: $white-color;
-
-  @media screen and (min-width: 320px) {
-    max-width: 480px;
+  color: $main-color;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+    font-size: 34px;
+    line-height: 0.9;
   }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 25px;
+    font-size: 58px;
+    line-height: 0.9;
+  }
+}
+
+.title-first {
+  font-family: Titan One, sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  letter-spacing: 0.04em;
+
+  color: $white-color;
   @media screen and (min-width: 768px) {
     font-size: 22px;
-    line-height: 1.13;
-    max-width: 768px;
   }
   @media screen and (min-width: 1280px) {
     font-size: 38px;
-    line-height: 1.13;
-    max-width: 1280px;
   }
+}
+.title-last {
+  line-height: 1.1;
 }
 
 .button-box {
@@ -376,18 +351,11 @@
   &:focus {
     background-color: $hover-btnred;
   }
-  @media screen and (min-width: 320px) {
-    max-width: 480px;
-  }
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-  }
   @media screen and (min-width: 1280px) {
     width: 105px;
     height: 40px;
     font-size: 14px;
     line-height: 1.28;
-    max-width: 1280px;
   }
 }
 
@@ -410,18 +378,11 @@
   &:focus {
     background-color: $hover-btn;
   }
-  @media screen and (min-width: 320px) {
-    max-width: 480px;
-  }
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-  }
   @media screen and (min-width: 1280px) {
     width: 140px;
     height: 40px;
     font-size: 14px;
     line-height: 1.28;
-    max-width: 1280px;
   }
 }
 
@@ -433,12 +394,8 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-  }
   @media screen and (min-width: 1280px) {
     right: 110px;
-    max-width: 1280px;
   }
 }
 
@@ -450,8 +407,8 @@
     display: none;
   }
   @media screen and (min-width: 1280px) {
-    top: 156px;
-    right: 94px;
+    top: 160px;
+    right: 115px;
   }
 }
 
@@ -485,7 +442,7 @@
   }
 }
 
-.chain-titil {
+.chain-title {
   font-family: Titan One, sans-serif;
   font-weight: 400;
   font-size: 28px;
@@ -513,7 +470,6 @@
   }
 }
 
-
 /* СТИЛИ ДЛЯ КНОПОК */
 
 .hero__list {
@@ -521,7 +477,6 @@
 }
 
 .hero__item {
-
   &:not(:last-child) {
     margin-right: 8px;
 
@@ -545,7 +500,7 @@
 
   box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
   transition: background-color $cubic;
-  
+
   font-weight: 400;
   font-size: 8px;
   line-height: 1.25;
@@ -554,13 +509,12 @@
     font-size: 14px;
     line-height: 1.28;
   }
-
 }
 
 .hero__link--products {
   width: 63px;
 
-  color: $white-color;  
+  color: $white-color;
   background-color: $main-color;
 
   &:hover,
