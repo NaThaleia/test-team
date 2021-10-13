@@ -292,9 +292,10 @@
   font-family: Titan One, sans-serif;
   font-weight: 400;
   font-size: 48px;
-  line-height: 0.97;
+  line-height: 0.5;
   letter-spacing: 0.04em;
-  text-transform: unset;
+  text-transform: uppercase;
+
   color: $main-color;
   @media screen and (min-width: 768px) {
     margin-bottom: 20px;
@@ -312,9 +313,7 @@
   font-family: Titan One, sans-serif;
   font-weight: 400;
   font-size: 26px;
-  line-height: 0.6;
   letter-spacing: 0.04em;
-  text-transform: uppercase;
 
   color: $white-color;
   @media screen and (min-width: 768px) {
@@ -323,6 +322,9 @@
   @media screen and (min-width: 1280px) {
     font-size: 38px;
   }
+}
+.title-last {
+  line-height: 1.1;
 }
 
 .button-box {
