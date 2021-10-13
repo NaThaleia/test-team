@@ -1,5 +1,4 @@
 .footer {
-  width: 100%;
   background-color: $bg-color;
   &__main {
     display: flex;
@@ -133,14 +132,15 @@
   }
   &__trademark {
     width: 150px;
+    padding: 0 8px;
     text-align: center;
     font-weight: bold;
     font-size: 14px;
     line-height: 1.52;
-    letter-spacing: 0.02em;
     color: $second-text-color;
     @media screen and (min-width: 768px) {
       width: 276px;
+      letter-spacing: 0.02em;
     }
   }
 }
