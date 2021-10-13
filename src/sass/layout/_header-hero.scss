@@ -331,60 +331,60 @@
   display: flex;
 }
 
-.button-hero1 {
-  width: 62.4px;
-  height: 24px;
-  margin-right: 15px;
-  border-radius: 22px;
-  border: none;
-  cursor: pointer;
-  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
-  background-color: $main-color;
+// .button-hero1 {
+//   width: 62.4px;
+//   height: 24px;
+//   margin-right: 15px;
+//   border-radius: 22px;
+//   border: none;
+//   cursor: pointer;
+//   box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+//   background-color: $main-color;
 
-  font-weight: 400;
-  font-size: 8px;
-  line-height: 1.25;
+//   font-weight: 400;
+//   font-size: 8px;
+//   line-height: 1.25;
 
-  color: $white-color;
-  transition: background-color $cubic;
-  &:hover,
-  &:focus {
-    background-color: $hover-btnred;
-  }
-  @media screen and (min-width: 1280px) {
-    width: 105px;
-    height: 40px;
-    font-size: 14px;
-    line-height: 1.28;
-  }
-}
+//   color: $white-color;
+//   transition: background-color $cubic;
+//   &:hover,
+//   &:focus {
+//     background-color: $hover-btnred;
+//   }
+//   @media screen and (min-width: 1280px) {
+//     width: 105px;
+//     height: 40px;
+//     font-size: 14px;
+//     line-height: 1.28;
+//   }
+// }
 
-.button-hero2 {
-  width: 82.8px;
-  height: 24px;
-  border-radius: 22px;
-  border: none;
-  cursor: pointer;
-  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
-  background-color: $white-color;
+// .button-hero2 {
+//   width: 82.8px;
+//   height: 24px;
+//   border-radius: 22px;
+//   border: none;
+//   cursor: pointer;
+//   box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+//   background-color: $white-color;
 
-  font-weight: 400;
-  font-size: 8px;
-  line-height: 1.25;
+//   font-weight: 400;
+//   font-size: 8px;
+//   line-height: 1.25;
 
-  color: $main-color;
-  transition: background-color $cubic;
-  &:hover,
-  &:focus {
-    background-color: $hover-btn;
-  }
-  @media screen and (min-width: 1280px) {
-    width: 140px;
-    height: 40px;
-    font-size: 14px;
-    line-height: 1.28;
-  }
-}
+//   color: $main-color;
+//   transition: background-color $cubic;
+//   &:hover,
+//   &:focus {
+//     background-color: $hover-btn;
+//   }
+//   @media screen and (min-width: 1280px) {
+//     width: 140px;
+//     height: 40px;
+//     font-size: 14px;
+//     line-height: 1.28;
+//   }
+// }
 
 .hero-girl {
   display: block;
