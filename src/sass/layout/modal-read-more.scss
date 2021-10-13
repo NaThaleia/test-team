@@ -129,10 +129,12 @@
 }
 
 .modal-recipe__icon--icon {
-  fill: #e17992;
+  width: 30px;
+  height: 30px;
   display: block;
   align-items: center;
   margin-top: 8px;
+  fill: #c27db5;
 }
 
 .modal-recipe__instruction {
