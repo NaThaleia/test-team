@@ -1,0 +1,197 @@
+.backdrop-modal-read-more {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 93px 15px;
+  overflow-y: scroll;
+  background-color: rgba(255, 232, 237, 0.5);
+  opacity: 1;
+  z-index: 115;
+  transition: opacity $cubic;
+}
+
+.is-hidden-modal-read-more {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: opacity $cubic, visibility $cubic;
+}
+
+.backdrop-modal-read-more.is-hidden-modal-read-more .modal-read-more-form {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-read-more-form {
+  position: absolute;
+  padding: 15px;
+  background-position: center;
+  min-height: 600px;
+  background: linear-gradient(45deg, rgb(231, 159, 185), rgb(249, 249, 249));
+  max-width: 450px;
+  width: 85%;
+  border: 1px solid $main-color;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform $cubic;
+
+  @media screen and (min-width: 768px) {
+    width: 550px;
+  }
+}
+
+.modal-read-more__finish--image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.modal-read-more__title {
+  display: block;
+  font-family: Titan One;
+  text-align: center;
+  font-size: 25px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  color: $hover-btnred;
+  margin-bottom: 10px;
+}
+
+.modal-read-more__area {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0%, 23%);
+}
+
+.modal-recipe__thumb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 0px;
+  margin: 0;
+}
+
+.modal-read-more__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-recipe__time {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.modal-recipe__text {
+  color: #000000;
+  font-size: 15px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  display: block;
+  margin-right: 30px;
+}
+
+.modal-recipe__text--time {
+  display: block;
+  font-size: 15px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: $main-color;
+  margin-left: auto;
+  font-weight: 700;
+}
+
+.modal-recipe__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-recipe__description--title {
+  display: block;
+  font-family: Titan One;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  color: $hover-btnred;
+  margin-top: 20px;
+}
+
+.modal-recipe__icon--icon {
+  width: 30px;
+  height: 30px;
+  display: block;
+  align-items: center;
+  margin-top: 8px;
+  fill: #c27db5;
+}
+
+.modal-recipe__instruction {
+  color: $text-color;
+  font-size: 15px;
+  line-height: 0.8;
+  letter-spacing: 0.01em;
+  font-style: italic;
+
+  margin-bottom: 10px;
+}
+
+.modal-recipe__instruction--card {
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.modal-read-more__finish {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.modal-read-more__finish--title {
+  display: block;
+  font-family: Titan One;
+  text-align: center;
+  font-size: 25px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  color: $hover-btnred;
+  display: flex;
+  align-items: center;
+}
+
+.modal-read-more__close {
+  display: flex;
+  color: $main-color;
+  font-weight: 700;
+  text-align: center;
+  align-items: center;
+  margin-left: auto;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    background-color: #ffb8ca;
+  }
+}
