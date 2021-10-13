@@ -7,3 +7,12 @@ body {
 body.modal-open {
   overflow: hidden;
 }
+::selection {
+  background: #d85674;
+}
+::-moz-selection {
+  background: #d85674;
+}
+::-webkit-selection {
+  background: #d85674;
+}
