@@ -2,34 +2,20 @@
   background: linear-gradient(to top, #fff5f6 92%, #ffffff 0%);
 
   @media screen and (max-width: 767px) {
-    background-image: url('../images/contacts/contacts-bg-desc1x.png'),
-      linear-gradient(to top, #fff5f6 93%, #ffffff 0%);
+    background-image: linear-gradient(to top, #fff5f6 93%, #ffffff 0%);
     background-size: contain;
     background-position: 50%;
     background-repeat: no-repeat;
   }
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url('../images/contacts/contacts-bg-desc2x.png'),
-      linear-gradient(to top, #fff5f6 93%, #ffffff 0%);
-  }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    background-image: url('../images/contacts/contacts-bg-desc1x.png'),
-      linear-gradient(to top, #fff5f6 86%, #ffffff 0%);
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    background-image: linear-gradient(to top, #fff5f6 86%, #ffffff 0%);
     background-size: contain;
     background-position: 50%;
     background-repeat: no-repeat;
   }
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url('../images/contacts/contacts-bg-desc2x.png'),
-      linear-gradient(to top, #fff5f6 86%, #ffffff 0%);
-  }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     background-image: url('../images/contacts/contacts-bg-desc1x.png'),
       linear-gradient(to top, #fff5f6 88%, #ffffff 0%);
     background-size: contain;
@@ -52,13 +38,13 @@
     padding-left: 30px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     bottom: 78px;
     padding-right: 16px;
     padding-left: 16px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     bottom: 102px;
   }
 }
@@ -85,11 +71,11 @@
       margin-bottom: 20px;
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
       margin-right: 20px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1279px) {
       margin-right: 31px;
     }
   }
@@ -111,12 +97,12 @@
     text-align: center;
     max-width: 350px;
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     max-width: 220px;
     padding: 50px 31px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1279px) {
     max-width: 330px;
     padding: 51px 44px 62px 43px;
   }
@@ -133,11 +119,11 @@
     padding-bottom: 25px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     padding-bottom: 30px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     padding-bottom: 32px;
   }
 }
@@ -150,25 +136,22 @@
   @media screen and (max-width: 767px) {
     color: $white-color;
     font-size: 12px;
-    font-weight: 500;
     line-height: 1.86;
     padding: 0 25px;
     margin-bottom: 25px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     color: $white-color;
     font-size: 16px;
-    font-weight: 500;
     line-height: 1.86;
     padding: 0 17px;
     margin-bottom: 30px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     color: $white-color;
     font-size: 16px;
-    font-weight: 500;
     line-height: 1.86;
     padding: 0 17px;
     margin-bottom: 32px;
@@ -180,50 +163,44 @@
 }
 
 .contacts-addr__city {
+  text-align: left;
   @media screen and (max-width: 767px) {
     color: $text-color;
     font-size: 12px;
-    font-weight: 500;
     line-height: 1.86;
     margin-bottom: 10px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     color: $text-color;
     font-size: 14px;
-    font-weight: 500;
     line-height: 1.86;
     margin-bottom: 14px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     color: $text-color;
     font-size: 16px;
-    font-weight: 500;
     line-height: 1.86;
     margin-bottom: 10px;
   }
 }
 
 .contacts-addr__text {
+  text-align: left;
+  color: $second-text-color;
   @media screen and (max-width: 767px) {
-    color: $second-text-color;
     font-size: 12px;
-    font-weight: 500;
     line-height: 1.5;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    color: $second-text-color;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     font-size: 14px;
-    font-weight: 500;
     line-height: 1.66;
   }
 
-  @media screen and (min-width: 1200px) {
-    color: $second-text-color;
+  @media screen and (min-width: 1280px) {
     font-size: 16px;
-    font-weight: 500;
     line-height: 1.83;
   }
 }
@@ -240,12 +217,12 @@
     padding-bottom: 25px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     padding-top: 30px;
     padding-bottom: 30px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -256,63 +233,54 @@
     margin-bottom: 10px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     margin-bottom: 16px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     margin-bottom: 15px;
   }
 }
 
 .contacts-schedule__days {
+  text-align: left;
+  color: $text-color;
+  line-height: 1.86;
   @media screen and (max-width: 767px) {
-    color: $text-color;
     font-size: 12px;
-    font-weight: 500;
-    line-height: 1.86;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    color: $text-color;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     font-size: 14px;
-    font-weight: 500;
-    line-height: 1.86;
   }
 
-  @media screen and (min-width: 1200px) {
-    color: $text-color;
+  @media screen and (min-width: 1280px) {
     font-size: 16px;
-    font-weight: 500;
-    line-height: 1.86;
   }
 }
 
 .contacts-schedule__time {
+  text-align: left;
+  line-height: 1.86;
   @media screen and (max-width: 767px) {
     color: $second-color;
     font-size: 12px;
-    font-weight: 500;
-    line-height: 1.86;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     color: $second-color;
     font-size: 14px;
-    font-weight: 500;
-    line-height: 1.86;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     color: $second-color;
     font-size: 16px;
-    font-weight: 500;
-    line-height: 1.86;
   }
 }
 
 // Contact
 .contacts-info {
+  text-align: left;
   padding-left: 0;
   list-style-type: none;
 
@@ -320,11 +288,11 @@
     padding-top: 25px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     padding-top: 30px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     padding-top: 32px;
   }
 }
@@ -335,21 +303,18 @@
   @media screen and (max-width: 767px) {
     color: $second-text-color;
     font-size: 12px;
-    font-weight: 500;
     line-height: 1.5;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     color: $second-text-color;
     font-size: 14px;
-    font-weight: 500;
     line-height: 1.83;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     color: $second-text-color;
     font-size: 16px;
-    font-weight: 500;
     line-height: 1.83;
   }
 }
@@ -365,7 +330,7 @@
     padding-bottom: 113px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -374,7 +339,7 @@
     padding-bottom: 158px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     display: flex;
     flex-direction: row;
     justify-content: center;
