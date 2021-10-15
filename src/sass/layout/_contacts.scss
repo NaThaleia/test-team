@@ -1,40 +1,51 @@
 .section--contacts {
-  //background-color: $bg-color;
   background: linear-gradient(to top, #fff5f6 92%, #ffffff 0%);
 
   @media screen and (max-width: 767px) {
-    padding-top: 0;
-    //padding-bottom: 113px;
-    //background: linear-gradient(to top, #fff5f6 93%, #ffffff 0%);
+    background-image: url('../images/contacts/contacts-bg-desc1x.png'),
+      linear-gradient(to top, #fff5f6 93%, #ffffff 0%);
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('../images/contacts/contacts-bg-desc2x.png'),
+      linear-gradient(to top, #fff5f6 93%, #ffffff 0%);
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    padding-top: 0;
-    //padding-bottom: 158px;
-    background: linear-gradient(to top, #fff5f6 86%, #ffffff 0%);
+    background-image: url('../images/contacts/contacts-bg-desc1x.png'),
+      linear-gradient(to top, #fff5f6 86%, #ffffff 0%);
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('../images/contacts/contacts-bg-desc2x.png'),
+      linear-gradient(to top, #fff5f6 86%, #ffffff 0%);
   }
 
   @media screen and (min-width: 1200px) {
-    padding-top: 0;
+    background-image: url('../images/contacts/contacts-bg-desc1x.png'),
+      linear-gradient(to top, #fff5f6 88%, #ffffff 0%);
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
     padding-bottom: 165px;
-    background: linear-gradient(to top, #fff5f6 88%, #ffffff 0%);
-    //background-image: url('../images/contacts/contacts-bg-desc1x.png');
-    //background-repeat: no-repeat;
-    background-position: left top;
-    background-size: 100%;
-
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (-webkit-min-device-pixel-ratio: 2),
-      screen and (-o-min-device-pixel-ratio: 2/1),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: url('../images/contacts/contacts-bg-desc2x.png');
-    }
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('../images/contacts/contacts-bg-desc2x.png'),
+      linear-gradient(to top, #fff5f6 88%, #ffffff 0%);
   }
 }
 
 .contacts {
-  //position: relative;
   @media screen and (max-width: 767px) {
     bottom: 84px;
     padding-right: 30px;
